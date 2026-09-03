@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a2a52">
+  <meta name="description" content="INTERA — conectá lo que podés aportar con lo que necesitás mediante Créditos de Tiempo.">
+  <title>INTERA · Modo demo local</title>
+  <link rel="icon" href="./assets/intera-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/app.css">
+</head>
+<body>
+  <div id="app"><div class="boot"><img src="./assets/intera-mark.svg" alt="" width="52"><strong>intera</strong><span>Cargando demo local…</span></div></div>
+  <noscript>INTERA necesita JavaScript para ejecutar esta demo autocontenida.</noscript>
+  <script>
+    (() => {
+      const root = document.querySelector('#app');
+      if (location.protocol === 'file:') {
+        root.innerHTML = `
+          <main class="boot" style="max-width:720px;margin:8vh auto;padding:32px;text-align:left;align-items:flex-start">
+            <img src="./assets/intera-mark.svg" alt="INTERA" width="52">
+            <strong style="font-size:1.5rem">INTERA necesita abrirse desde el servidor local</strong>
+            <span>Chrome bloquea los módulos de la aplicación cuando <code>index.html</code> se abre con doble clic mediante <code>file://</code>.</span>
+            <span>En Windows, cerrá esta pestaña y hacé doble clic en <strong>INICIAR_INTERA.bat</strong>.</span>
+            <span>Alternativa desde una terminal en esta carpeta: <code>node tools/server.mjs</code> y luego abrí <code>http://127.0.0.1:4173</code>.</span>
+          </main>`;
+        return;
+      }
+
+      const manifest = document.createElement('link');
+      manifest.rel = 'manifest';
+      manifest.href = './manifest.webmanifest';
+      document.head.append(manifest);
+
+      const app = document.createElement('script');
+      app.type = 'module';
+      app.src = './src/ui/app.js';
+      document.body.append(app);
+    })();
+  </script>
+</body>
+</html>

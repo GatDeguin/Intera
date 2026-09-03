@@ -1,0 +1,15 @@
+{
+  "name": "INTERA · Demo local",
+  "short_name": "INTERA",
+  "description": "Demo autocontenida de una red de intercambio basada en Créditos de Tiempo.",
+  "lang": "es-AR",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfdfe",
+  "theme_color": "#0a2a52",
+  "icons": [
+    { "src": "./assets/intera-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "categories": ["social", "productivity", "lifestyle"]
+}

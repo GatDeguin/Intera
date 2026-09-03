@@ -1,0 +1,9 @@
+{
+  "name": "intera-autocontained-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/server.mjs"
+  }
+}
