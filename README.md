@@ -1,149 +1,100 @@
-# INTERA — MVP demo autocontenido
+# INTERA v4 — Experiencia HTML autocontenida
 
-INTERA conecta lo que una persona **puede aportar** con lo que otra **necesita** usando tiempo como unidad de valor.
+**Demo local funcional. Sin instalación para abrirla.** La interfaz, las imágenes y el JavaScript están incluidos en `INTERA.html`. No es una captura ni una maqueta estática.
 
-Esta carpeta contiene una PWA funcional de demostración, no un mockup. Permite recorrer el flujo bilateral completo con perfiles ficticios de Almagro, Caballito y Villa Crespo: publicar, encontrar un match, proponer, reservar Créditos de Tiempo (escrow), intercambiar, conversar, confirmar y valorar.
+## Abrir
 
-> **Modo demo local:** identidad, verificación, reputación, personas y operaciones de esta versión son simuladas. No coordines servicios reales desde esta demo.
+Guardá `INTERA.html` y abrilo con un navegador. En Windows también podés usar `ABRIR_INTERA.bat`, después de descomprimir el paquete. No necesitás Node.js, npm, extensiones, fuentes ni dependencias para probar este HTML.
 
-## Inicio rápido
+Si se abre en un editor, elegí **Abrir con → tu navegador**. No desactives la seguridad del navegador. No hace falta un servidor: no se cargan módulos JavaScript, hojas de estilo ni fotografías externas al abrir el archivo.
 
-Requisito: **Node.js 22 o superior**.
-
-No hace falta ejecutar `npm install`: el proyecto no tiene dependencias de terceros ni necesita credenciales, APIs o acceso al registry de npm.
-
-### Windows — recomendado
-
-No abras `index.html` con doble clic: Chrome ejecuta ese archivo mediante `file://` y bloquea los módulos ES, el manifest y las capacidades PWA por política de seguridad del navegador.
-
-1. Descomprimí la carpeta completa.
-2. Hacé doble clic en **`INICIAR_INTERA.bat`**.
-3. Se abrirá automáticamente `http://127.0.0.1:4173`.
-4. Mantené abierta la ventana del servidor mientras uses la demo; cerrala para detenerla.
-
-### Terminal
-
-```bash
-npm run dev
-```
-
-Abrí `http://127.0.0.1:4173`.
-
-También podés arrancarlo sin npm:
-
-```bash
-node tools/server.mjs
-```
-
-Para elegir otro puerto:
-
-```bash
-PORT=8080 npm run dev
-```
-
-## Recorrido recomendado de la demo
-
-1. Entrá como **Ana Torres**.
-2. Abrí su solicitud de soporte tecnológico o creá una nueva.
-3. Elegí a **Mateo Ruiz** y enviá una propuesta.
-4. Desde el selector **Modo demo local**, cambiá a Mateo.
-5. Aceptá: los CT de Ana pasan de `AVAILABLE` a `HELD`.
-6. Iniciá el intercambio y escribí mensajes.
-7. Como Mateo, marcá el trabajo como completado.
-8. Volvé a Ana y confirmá: los CT salen del escrow y se acreditan a Mateo.
-9. Enviá una valoración y revisá perfil e historial.
-
-El detalle del intercambio permite además simular extensión de duración, cancelación, no-show y disputa.
-
-## Regla económica
-
-- **1 CT = 15 minutos.**
-- Los servicios se acuerdan en CT enteros.
-- Internamente `1 CT = 4 ct_quarters` para ajustes porcentuales.
-- Cada perfil demo nuevo recibe **4 CT** de bienvenida.
-- No se permite saldo negativo.
-- No se compran, venden ni convierten CT en dinero.
-- Reputación y verificación son capas distintas del producto.
-- El valor del tiempo no cambia según profesión, barrio, reputación o seniority.
-
-## Arquitectura
-
-```text
-UI SPA / hash routes
-       ↓
-DemoService (casos de uso y mutaciones atómicas)
-       ↓
-Domain modules
-CT · ledger · state machine · matching · reputation
-       ↓
-LocalRepository
-       ↓
-localStorage versionado
-```
-
-El dominio no depende del DOM ni de `localStorage`. El ledger es append-only, usa `ct_quarters` enteros e idempotency keys, y deriva saldos a partir de postings.
-
-La PWA usa únicamente APIs estándar: ES Modules, `localStorage`, Service Worker y Web App Manifest.
-
-## Checks
-
-```bash
-npm test
-npm run e2e
-npm run check
-npm run build
-```
-
-- `npm test`: unit, integration, smoke y journey tests con `node:test`.
-- `npm run e2e`: ejecuta de forma aislada el journey completo a nivel aplicación/UI-contract.
-- `npm run check`: `node --check` sobre módulos JS/MJS.
-- `npm run build`: genera una copia distribuible en `dist/`.
-
-## Build distribuible
-
-```bash
-npm run build
-cd dist
-npm run dev
-```
-
-`dist/` conserva el mismo requisito: Node.js 22+, cero paquetes externos.
-
-## Persistencia y reset
-
-El estado se guarda en `localStorage` bajo una clave versionada. El panel **Modo demo local** permite cambiar de perfil y **Restablecer demo**, que vuelve a cargar los datos seed.
-
-## PWA y offline
-
-El service worker cachea el app shell y los módulos locales. Después de una primera carga servida por HTTP, la interfaz puede reutilizar esos recursos sin red. La persistencia de los intercambios permanece en el navegador.
+**Primer recorrido:** Inicio → Probar el recorrido → Empezar con Ana. Enviale una propuesta de 30 minutos a Mateo, cambiá al perfil de Mateo para aceptar, iniciá el intercambio, escribí un mensaje y marcá el servicio como completado. Volvé a Ana para confirmar y liberar los 2 CT. Cada parte puede valorar después. Los cambios de perfil están señalados como demostración.
 
 ## Qué incluye
 
-- 7 perfiles ficticios y oferta/demanda seed.
-- onboarding demo y 4 CT de bienvenida;
-- ofertas y solicitudes;
-- matching determinístico y explicable;
-- selector multiusuario para demostrar ambos lados;
-- escrow de CT;
-- lifecycle de intercambio;
-- extensión con aprobación bilateral;
-- cancelaciones y no-show con reglas 100/0, 25/75 y 50/50;
-- disputa demo que mantiene CT congelados;
-- chat local por intercambio;
-- reviews posteriores a confirmación;
-- reputación separada de verificación;
-- historial del ledger;
-- UI mobile-first y navegación por teclado;
-- PWA/offline app shell.
+- Inicio rediseñado con fotografías ilustrativas, saldo y próxima acción real según el estado local.
+- Catálogo, búsqueda sin tildes, filtros por categoría, barrio, duración, modalidad y saldo.
+- Tarjetas fotográficas, vista rápida operativa, guardar con **Deshacer**, comparador de hasta tres habilidades y carrusel con deslizamiento y controles de teclado.
+- Publicación de ofertas y necesidades, vista previa del formulario, edición de perfiles ficticios, pausa/reactivación y comunidad por barrio.
+- Propuesta, reserva de CT por intercambio, aceptación, inicio, chat local, extensión aprobada por ambas partes, finalización, confirmación y valoración bilateral.
+- Cancelaciones, ausencias y disputas de ejemplo; reportes y bloqueo locales.
+- Agenda y exportación `.ics`, mensajes, actividad pendiente, historial de CT y CSV.
+- Exportación/importación JSON, confirmación antes de reemplazar datos y protección ante respaldos malformados.
+- Tema claro/oscuro; panel **Experiencia visual** con animaciones adaptadas al sistema, movimiento reducido o desactivado.
 
-## Fuera de alcance
+### Animaciones y microinteracciones implementadas
 
-No hay autenticación real, OTP, DNI, biometría, Veriff, Mercado Pago, dinero, Supabase, moderación humana, geolocalización continua, notificaciones externas ni servicios regulados. La demo no sustituye los gates legales, tributarios, de seguridad y Trust & Safety del MVP productivo.
+Entradas escalonadas de contenido y diálogos; elevación de tarjetas; brillo breve de bienvenida en el saldo; contador visual que termina en el valor exacto; ripple al pulsar controles; respuesta del corazón de guardado y de la comparación; entrada de mensajes reales; confeti breve **solo después de confirmar y liberar los CT de la demo**. Los botones del carrusel reflejan sus límites.
 
-## Migración futura
+No hay carga simulada con espera artificial, audio, vibraciones, video automático, respuestas de personas ficticias ni estados de presencia inventados. Las respuestas sugeridas y los emojis solo editan el borrador del chat: **no se envían hasta pulsar Enviar**.
 
-Las interfaces separan reglas de producto e infraestructura. Para un MVP productivo pueden reemplazarse progresivamente `localStorage` por PostgreSQL/Supabase, sesión demo por Auth, verificación simulada por un proveedor KYC y el ledger local por operaciones transaccionales de base de datos, conservando los casos de uso centrales.
+El modo reducido del sistema prevalece sobre las preferencias de movimiento completo. Desactivar animaciones cancela los efectos pendientes y deja el saldo final visible. Las animaciones no modifican el ledger.
 
-## Nota de validación del entorno
+### Teclado y accesos
 
-El journey automatizado recorre el contrato de UI y dominio completo sin dependencias externas. En el entorno donde se construyó esta entrega, Chromium está instalado pero una política organizacional bloquea la navegación a URLs locales y `file://`; por eso no se incluye una afirmación de E2E visual en navegador ni screenshots validados. La demo sí queda lista para abrirse en un navegador normal mediante `npm run dev`.
+`Ctrl+K` / `Cmd+K`: búsqueda rápida. `/`: búsqueda cuando no estás escribiendo. Flechas y Enter: recorrer y abrir resultados. Escape: cerrar diálogos. Flechas izquierda/derecha: mover el carrusel cuando tiene el foco. El botón de ajustes visuales está disponible también en celular.
+
+## Reglas que no cambian
+
+**1 Crédito de Tiempo (CT) = 15 minutos.** Cuatro CT equivalen a una hora para cualquier habilidad. Los servicios se acuerdan en CT enteros; ajustes y cancelaciones usan cuartos de CT. No se compran CT, no se convierten a dinero y no se permite saldo negativo. El saldo disponible es distinto de los CT reservados. La bienvenida de 4 CT es de ejemplo, única por perfil y con vencimiento.
+
+La verificación es simulada. El presencial conserva los controles V2 de demo para ambas partes. No se habilitaron menores, cuidado de personas, salud ni otras categorías excluidas del alcance.
+
+Las ilustraciones de referencia contenían tarifas variables por hora y categorías fuera del MVP; esas inconsistencias visuales **no se trasladaron a las reglas del producto**. En esta versión no se muestran distancias GPS inventadas, calificaciones ficticias como reputación real, llamadas, videollamadas ni un mapa sin datos.
+
+## Guardar y recuperar
+
+El archivo intenta usar almacenamiento local del navegador. Si el navegador lo impide, se indica **sesión temporal** y los cambios solo viven en la pestaña. Cambiar el nombre/ubicación del HTML, usar otro navegador o borrar sus datos puede cambiar el almacenamiento accesible.
+
+**Exportá un JSON desde Centro de demo → Exportar respaldo antes de cerrar, mover o actualizar.** Para pasar de v2/v3 a v4: conservá el HTML anterior y su respaldo; en v4 elegí Importar respaldo, revisá el resumen y confirmá. No borres el JSON hasta verificar lo recuperado. La compatibilidad conserva `intera-demo-backup`, versión 2; no es un error de numeración.
+
+La preferencia de tema/movimiento se guarda aparte del estado económico. El comparador y los borradores pertenecen a la sesión de interfaz; no forman parte del respaldo económico.
+
+## Imágenes
+
+Las escenas y los retratos son **imágenes ilustrativas generadas**, recortadas de las tres maquetas de INTERA presentes en esta conversación. No representan usuarios reales ni acreditan identidad, experiencia, reputación o servicios prestados. Hay 11 recursos WebP locales; algunas tarjetas reutilizan la escena de su categoría. Los perfiles sin un retrato propio conservan sus iniciales.
+
+`assets/photos/provenance.json` documenta los recortes y `src/interface/media-data.js` contiene los datos incrustados. La copia fuente incorpora las imágenes preparadas: no es necesario regenerarlas para construir el HTML. No se distribuyen fuentes tipográficas.
+
+## Modo demo local: límites de esta entrega
+
+Es una demo de navegador, no un servicio productivo. No hay backend de negocio, autenticación real, usuarios conectados entre dispositivos, KYC, dinero, llamadas, soporte humano ni moderación real. Un HTML local editable no es una autoridad segura para créditos o reputación.
+
+El chat, las valoraciones, los acuerdos y los reportes quedan dentro de la demo. No ingreses DNI, contraseñas, domicilios ni información de terceras personas. Los reportes no avisan a servicios de emergencia. Los eventos de calendario llevan marca DEMO y no envían invitaciones.
+
+La QA automatizada se ejecuta en Chromium con el HTML cargado en memoria. No equivale a una prueba de doble clic en Windows, persistencia nativa `file://`, Safari/Firefox/iOS o instalación PWA. Detalle y evidencias: `docs/qa-v4/QA-REPORT-v4.md` en la fuente; `INFORME_DE_PRUEBAS.md` en la distribución.
+
+## Código fuente y verificación
+
+Solo para desarrollar: Node.js 22+ y comandos sin instalación de paquetes. No hace falta ejecutar `npm install`.
+
+```sh
+npm test
+npm run check
+npm run build
+npm run e2e
+```
+
+`npm test` incluye el recorrido de dominio E2E; no sumar `npm run e2e` como una suite adicional. El build genera el mismo HTML en `index.html`, `INTERA.html` y `dist/`. El empaquetador resuelve imports durante la construcción; el archivo entregado usa un único script clásico sin `eval` ni imports en tiempo de ejecución.
+
+Para QA de interfaz, con Python, Playwright y Chromium disponibles:
+
+```sh
+python docs/qa-v4/browser-qa.py
+python docs/qa-v4/interactions-qa.py
+python docs/qa-v4/visual-regression.py
+```
+
+Estas herramientas de QA no son dependencias del archivo que abre el usuario. No se modifica la política administrada del navegador.
+
+### Servidor/PWA opcional
+
+`npm run dev`, `node tools/server.mjs` o `INICIAR_SERVIDOR.bat` sirven la demo en `http://127.0.0.1:4173`. Ese modo opcional sí necesita Node, no afecta a la apertura directa. Manifiesto y service worker se registran únicamente por HTTP/HTTPS; nunca al abrir el archivo `file://`.
+
+El servidor escucha solo en loopback y permite una lista acotada de archivos. No conecta dispositivos ni sincroniza datos. La distribución incluye los archivos de PWA, pero no se certifica instalación o funcionamiento offline de su service worker en dispositivos reales.
+
+## Organización
+
+`src/domain`: reglas económicas; `src/application`: casos de uso; `src/persistence`: guardado y respaldos; `src/demo`: perfiles ficticios; `src/interface`: vistas, fotos y movimiento; `assets`: recursos locales y estilos; `tests`: verificaciones; `tools`: construcción/servidor; `docs/qa-v4`: evidencia y límites.
+
+La implementación de v4 conserva el dominio y el servicio de aplicación de v3. Se modifica la experiencia de presentación, no el valor temporal de las habilidades.

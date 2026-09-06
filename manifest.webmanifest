@@ -1,15 +1,26 @@
 {
+  "id": "./",
   "name": "INTERA · Demo local",
   "short_name": "INTERA",
-  "description": "Demo autocontenida de una red de intercambio basada en Créditos de Tiempo.",
+  "description": "Intercambio de capacidades y Créditos de Tiempo. Demostración con perfiles ficticios.",
   "lang": "es-AR",
-  "start_url": "./#/",
+  "start_url": "./index.html#/",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#fbfdfe",
-  "theme_color": "#0a2a52",
+  "background_color": "#f5fafb",
+  "theme_color": "#15394a",
   "icons": [
-    { "src": "./assets/intera-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
-  ],
-  "categories": ["social", "productivity", "lifestyle"]
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }

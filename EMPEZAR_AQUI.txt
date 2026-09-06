@@ -1,0 +1,36 @@
+INTERA v4 — ABRIR SIN INSTALAR NADA
+=================================
+
+1. Abrí INTERA.html con tu navegador.
+   En Windows también podés usar ABRIR_INTERA.bat.
+2. Elegí Probar el recorrido -> Empezar con Ana.
+3. Probá ambos lados: Ana solicita; Mateo acepta y completa;
+   Ana confirma y libera los 2 CT del acuerdo de 30 minutos.
+
+No necesitás Node, npm, cuenta ni conexión a Internet para abrir el HTML.
+Si se abre en un editor: clic derecho -> Abrir con -> tu navegador.
+No desactives ninguna opción de seguridad.
+
+NUEVO
+Fotografías ilustrativas integradas. Vista rápida. Carrusel deslizable.
+Corazón animado y Deshacer. Efectos al pulsar botones.
+Diálogos y mensajes animados. Celebración al confirmar un intercambio.
+Tema claro/oscuro y control de movimiento: botón de ajustes arriba.
+Sugerencias y emojis editan el borrador del chat, no envían por vos.
+
+CONSERVAR CAMBIOS
+Centro de demo -> Exportar respaldo.
+Si el navegador muestra sesión temporal, exportá antes de cerrar.
+Para traer tus pruebas de v2/v3, exportá desde el archivo anterior;
+importá el JSON en v4 y confirmá. Conservá siempre el respaldo original.
+
+SOLO DEMO
+Los perfiles, imágenes, CT y acuerdos son de demostración.
+No hay personas conectadas ni mensajes a otros dispositivos.
+No ingreses DNI, contraseñas, domicilios ni datos sensibles.
+1 CT = 15 minutos, sin compras de créditos ni retiros en dinero.
+
+INICIAR_SERVIDOR.bat es opcional: solo para HTTP/PWA y sí requiere Node.
+Para usar INTERA.html no lo necesitás.
+
+Pruebas y límites: INFORME_DE_PRUEBAS.md. Ayuda completa: README.md.
