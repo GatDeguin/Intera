@@ -1,0 +1,126 @@
+TAP version 13
+# (node:1064) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cotización en servidor, una sola preferencia bajo concurrencia
+ok 1 - cotización en servidor, una sola preferencia bajo concurrencia
+  ---
+  duration_ms: 11.908037
+  type: 'test'
+  ...
+# Subtest: URL de retorno no se procesa: el pago lo determina GET de MP
+ok 2 - URL de retorno no se procesa: el pago lo determina GET de MP
+  ---
+  duration_ms: 5.904911
+  type: 'test'
+  ...
+# Subtest: pago repetido, ledger de doble entrada y finalización sin mover dinero
+ok 3 - pago repetido, ledger de doble entrada y finalización sin mover dinero
+  ---
+  duration_ms: 7.443253
+  type: 'test'
+  ...
+# Subtest: rechaza pago por monto incorrecto
+ok 4 - rechaza pago por monto incorrecto
+  ---
+  duration_ms: 5.612912
+  type: 'test'
+  ...
+# Subtest: rechaza pago por moneda incorrecto
+ok 5 - rechaza pago por moneda incorrecto
+  ---
+  duration_ms: 4.194257
+  type: 'test'
+  ...
+# Subtest: rechaza pago por vendedor incorrecto
+ok 6 - rechaza pago por vendedor incorrecto
+  ---
+  duration_ms: 3.333691
+  type: 'test'
+  ...
+# Subtest: rechaza pago por referencia incorrecto
+ok 7 - rechaza pago por referencia incorrecto
+  ---
+  duration_ms: 3.15596
+  type: 'test'
+  ...
+# Subtest: rechaza pago por ambiente incorrecto
+ok 8 - rechaza pago por ambiente incorrecto
+  ---
+  duration_ms: 3.989666
+  type: 'test'
+  ...
+# Subtest: rechaza pago por comision incorrecto
+ok 9 - rechaza pago por comision incorrecto
+  ---
+  duration_ms: 3.947033
+  type: 'test'
+  ...
+# Subtest: rechazado o pendiente no habilita prestación
+ok 10 - rechazado o pendiente no habilita prestación
+  ---
+  duration_ms: 5.934024
+  type: 'test'
+  ...
+# Subtest: cancelación con pago pide devolución y se confirma con MP
+ok 11 - cancelación con pago pide devolución y se confirma con MP
+  ---
+  duration_ms: 5.94471
+  type: 'test'
+  ...
+# Subtest: pago tardío de orden cancelada no la reactiva y se devuelve
+ok 12 - pago tardío de orden cancelada no la reactiva y se devuelve
+  ---
+  duration_ms: 3.752537
+  type: 'test'
+  ...
+# Subtest: doble pago real detectado y segundo pago devuelto con clave estable
+ok 13 - doble pago real detectado y segundo pago devuelto con clave estable
+  ---
+  duration_ms: 4.85647
+  type: 'test'
+  ...
+# Subtest: devolución parcial ajusta comisión por cumulativo sin destruir asientos
+ok 14 - devolución parcial ajusta comisión por cumulativo sin destruir asientos
+  ---
+  duration_ms: 4.487508
+  type: 'test'
+  ...
+# Subtest: contracargo bloquea operaciones sin presentarlo como devolución voluntaria
+ok 15 - contracargo bloquea operaciones sin presentarlo como devolución voluntaria
+  ---
+  duration_ms: 4.912091
+  type: 'test'
+  ...
+# Subtest: no se degrada un estado con una lectura vieja de MP
+ok 16 - no se degrada un estado con una lectura vieja de MP
+  ---
+  duration_ms: 4.293242
+  type: 'test'
+  ...
+# Subtest: ampliación tiene tarifa original, requiere pago separado y no cambia el bruto original
+ok 17 - ampliación tiene tarifa original, requiere pago separado y no cambia el bruto original
+  ---
+  duration_ms: 4.523782
+  type: 'test'
+  ...
+# Subtest: fallo de conexión al crear preferencia queda UNKNOWN y no crea otra
+ok 18 - fallo de conexión al crear preferencia queda UNKNOWN y no crea otra
+  ---
+  duration_ms: 2.983436
+  type: 'test'
+  ...
+# Subtest: pago aprobado no significa dinero disponible
+ok 19 - pago aprobado no significa dinero disponible
+  ---
+  duration_ms: 3.108711
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 166.200487

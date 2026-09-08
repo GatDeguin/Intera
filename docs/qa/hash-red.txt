@@ -1,0 +1,43 @@
+TAP version 13
+# Subtest: resumen visible calcula bruto y comisión de las tres tarifas
+ok 1 - resumen visible calcula bruto y comisión de las tres tarifas
+  ---
+  duration_ms: 15.149312
+  type: 'test'
+  ...
+# Subtest: texto escapado y CSV neutraliza fórmulas
+ok 2 - texto escapado y CSV neutraliza fórmulas
+  ---
+  duration_ms: 0.306912
+  type: 'test'
+  ...
+# Subtest: ICS contiene UTC, duración y escapa texto sin invitar terceros
+ok 3 - ICS contiene UTC, duración y escapa texto sin invitar terceros
+  ---
+  duration_ms: 2.157924
+  type: 'test'
+  ...
+# Subtest: rutas del cliente no dependen de un origen externo
+not ok 4 - rutas del cliente no dependen de un origen externo
+  ---
+  duration_ms: 0.427599
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/presentation.test.mjs:5:1'
+  failureType: 'testCodeFailure'
+  error: 'routeFromHash is not a function'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/presentation.test.mjs:5:143)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 3
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 78.391571

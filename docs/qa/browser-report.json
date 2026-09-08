@@ -1,0 +1,4325 @@
+{
+  "checks": [
+    "home load",
+    "server consent gate",
+    "mock seller connection",
+    "gross preview",
+    "publish with tier and explicit fee",
+    "filter",
+    "server-created order",
+    "frozen quote displayed",
+    "provider accepts",
+    "verified mock payment",
+    "release pending visible",
+    "chat escapes HTML",
+    "chat stored",
+    "service completed without moving funds",
+    "blind review own-only message",
+    "other review hidden",
+    "bilateral reveal",
+    "payment records",
+    "favorite response",
+    "comparison",
+    "quick search",
+    "layout / 320 light",
+    "layout /explorar 320 light",
+    "layout /necesidades 320 light",
+    "layout /publicar 320 light",
+    "layout /oferta/demo_offer_1 320 light",
+    "layout /ordenes 320 light",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 320 light",
+    "layout /agenda 320 light",
+    "layout /movimientos 320 light",
+    "layout /prestador 320 light",
+    "layout /perfil 320 light",
+    "layout /condiciones 320 light",
+    "layout /ayuda 320 light",
+    "layout /acceso 320 light",
+    "layout /registro 320 light",
+    "layout / 390 light",
+    "layout /explorar 390 light",
+    "layout /necesidades 390 light",
+    "layout /publicar 390 light",
+    "layout /oferta/demo_offer_1 390 light",
+    "layout /ordenes 390 light",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 390 light",
+    "layout /agenda 390 light",
+    "layout /movimientos 390 light",
+    "layout /prestador 390 light",
+    "layout /perfil 390 light",
+    "layout /condiciones 390 light",
+    "layout /ayuda 390 light",
+    "layout /acceso 390 light",
+    "layout /registro 390 light",
+    "layout / 768 light",
+    "layout /explorar 768 light",
+    "layout /necesidades 768 light",
+    "layout /publicar 768 light",
+    "layout /oferta/demo_offer_1 768 light",
+    "layout /ordenes 768 light",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 768 light",
+    "layout /agenda 768 light",
+    "layout /movimientos 768 light",
+    "layout /prestador 768 light",
+    "layout /perfil 768 light",
+    "layout /condiciones 768 light",
+    "layout /ayuda 768 light",
+    "layout /acceso 768 light",
+    "layout /registro 768 light",
+    "layout / 1024 light",
+    "layout /explorar 1024 light",
+    "layout /necesidades 1024 light",
+    "layout /publicar 1024 light",
+    "layout /oferta/demo_offer_1 1024 light",
+    "layout /ordenes 1024 light",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 1024 light",
+    "layout /agenda 1024 light",
+    "layout /movimientos 1024 light",
+    "layout /prestador 1024 light",
+    "layout /perfil 1024 light",
+    "layout /condiciones 1024 light",
+    "layout /ayuda 1024 light",
+    "layout /acceso 1024 light",
+    "layout /registro 1024 light",
+    "layout / 1440 light",
+    "layout /explorar 1440 light",
+    "layout /necesidades 1440 light",
+    "layout /publicar 1440 light",
+    "layout /oferta/demo_offer_1 1440 light",
+    "layout /ordenes 1440 light",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 1440 light",
+    "layout /agenda 1440 light",
+    "layout /movimientos 1440 light",
+    "layout /prestador 1440 light",
+    "layout /perfil 1440 light",
+    "layout /condiciones 1440 light",
+    "layout /ayuda 1440 light",
+    "layout /acceso 1440 light",
+    "layout /registro 1440 light",
+    "layout / 320 dark",
+    "layout /explorar 320 dark",
+    "layout /necesidades 320 dark",
+    "layout /publicar 320 dark",
+    "layout /oferta/demo_offer_1 320 dark",
+    "layout /ordenes 320 dark",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 320 dark",
+    "layout /agenda 320 dark",
+    "layout /movimientos 320 dark",
+    "layout /prestador 320 dark",
+    "layout /perfil 320 dark",
+    "layout /condiciones 320 dark",
+    "layout /ayuda 320 dark",
+    "layout /acceso 320 dark",
+    "layout /registro 320 dark",
+    "layout / 390 dark",
+    "layout /explorar 390 dark",
+    "layout /necesidades 390 dark",
+    "layout /publicar 390 dark",
+    "layout /oferta/demo_offer_1 390 dark",
+    "layout /ordenes 390 dark",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 390 dark",
+    "layout /agenda 390 dark",
+    "layout /movimientos 390 dark",
+    "layout /prestador 390 dark",
+    "layout /perfil 390 dark",
+    "layout /condiciones 390 dark",
+    "layout /ayuda 390 dark",
+    "layout /acceso 390 dark",
+    "layout /registro 390 dark",
+    "layout / 768 dark",
+    "layout /explorar 768 dark",
+    "layout /necesidades 768 dark",
+    "layout /publicar 768 dark",
+    "layout /oferta/demo_offer_1 768 dark",
+    "layout /ordenes 768 dark",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 768 dark",
+    "layout /agenda 768 dark",
+    "layout /movimientos 768 dark",
+    "layout /prestador 768 dark",
+    "layout /perfil 768 dark",
+    "layout /condiciones 768 dark",
+    "layout /ayuda 768 dark",
+    "layout /acceso 768 dark",
+    "layout /registro 768 dark",
+    "layout / 1024 dark",
+    "layout /explorar 1024 dark",
+    "layout /necesidades 1024 dark",
+    "layout /publicar 1024 dark",
+    "layout /oferta/demo_offer_1 1024 dark",
+    "layout /ordenes 1024 dark",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 1024 dark",
+    "layout /agenda 1024 dark",
+    "layout /movimientos 1024 dark",
+    "layout /prestador 1024 dark",
+    "layout /perfil 1024 dark",
+    "layout /condiciones 1024 dark",
+    "layout /ayuda 1024 dark",
+    "layout /acceso 1024 dark",
+    "layout /registro 1024 dark",
+    "layout / 1440 dark",
+    "layout /explorar 1440 dark",
+    "layout /necesidades 1440 dark",
+    "layout /publicar 1440 dark",
+    "layout /oferta/demo_offer_1 1440 dark",
+    "layout /ordenes 1440 dark",
+    "layout /orden/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0 1440 dark",
+    "layout /agenda 1440 dark",
+    "layout /movimientos 1440 dark",
+    "layout /prestador 1440 dark",
+    "layout /perfil 1440 dark",
+    "layout /condiciones 1440 dark",
+    "layout /ayuda 1440 dark",
+    "layout /acceso 1440 dark",
+    "layout /registro 1440 dark",
+    "no page JS errors"
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/demo/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/terms/accept",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/mp/connect",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/offers",
+      "status": 201,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/demo/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/terms/accept",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings",
+      "status": 201,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/demo/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/accept",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/demo/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/checkout",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/demo/pay/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/messages",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/demo/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/start",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/complete",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/demo/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/confirm",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/reviews",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/demo/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0/reviews",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/favorites/demo_offer_1",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bookings/f95b8ad4-49ba-4f1e-b1c1-9540a95c31b0",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/finances",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/legal",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "path": "/api/bootstrap",
+      "status": 200,
+      "method": "GET"
+    }
+  ],
+  "method": "Chromium page.set_content + explicit Python HTTP bridge; no native browser navigation/cookie/OAuth coverage"
+}

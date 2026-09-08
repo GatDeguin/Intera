@@ -1,0 +1,68 @@
+TAP version 13
+# (node:1302) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: config sin secretos, sesión saneada y archivos internos inaccesibles
+ok 1 - config sin secretos, sesión saneada y archivos internos inaccesibles
+  ---
+  duration_ms: 51.421943
+  type: 'test'
+  ...
+# Subtest: CSRF, origen ajeno y sesión ausente bloquean escrituras
+ok 2 - CSRF, origen ajeno y sesión ausente bloquean escrituras
+  ---
+  duration_ms: 31.136109
+  type: 'test'
+  ...
+# Subtest: sin aceptación actual servidor rechaza aunque UI envíe cualquier bandera
+ok 3 - sin aceptación actual servidor rechaza aunque UI envíe cualquier bandera
+  ---
+  duration_ms: 9.823297
+  type: 'test'
+  ...
+# Subtest: retorno de checkout no acredita dinero y endpoint privado no expone orden ajena
+ok 4 - retorno de checkout no acredita dinero y endpoint privado no expone orden ajena
+  ---
+  duration_ms: 18.686331
+  type: 'test'
+  ...
+# Subtest: webhook firmado se encola, duplicado deduplicado y GET verifica
+ok 5 - webhook firmado se encola, duplicado deduplicado y GET verifica
+  ---
+  duration_ms: 26.601561
+  type: 'test'
+  ...
+# Subtest: los accesos de simulación no existen fuera de mock
+ok 6 - los accesos de simulación no existen fuera de mock
+  ---
+  duration_ms: 9.512049
+  type: 'test'
+  ...
+# (node:1303) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cola persistente ejecuta notificación y devolución sin navegador
+ok 7 - cola persistente ejecuta notificación y devolución sin navegador
+  ---
+  duration_ms: 16.342043
+  type: 'test'
+  ...
+# Subtest: vencimiento de propuesta y pago pendiente funciona con reloj de servidor
+ok 8 - vencimiento de propuesta y pago pendiente funciona con reloj de servidor
+  ---
+  duration_ms: 5.972974
+  type: 'test'
+  ...
+# Subtest: fallos quedan en cola con retry sin exponer texto del proveedor
+ok 9 - fallos quedan en cola con retry sin exponer texto del proveedor
+  ---
+  duration_ms: 3.103364
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 259.499075

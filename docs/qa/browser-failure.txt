@@ -1,0 +1,100 @@
+Locator expected to have text 'Todo sobre tu servicio.'
+Actual value: Encontrá tu próxima conexión. 
+Call log:
+  - Expect "to_have_text" with timeout 5000ms
+  - waiting for locator("h1")
+    9 × locator resolved to <h1>Encontrá tu próxima conexión.</h1>
+      - unexpected value "Encontrá tu próxima conexión."
+
+Saltar al contenido
+intera
+TU COMUNIDAD
+Inicio
+Explorar
+Necesidades
+Mis servicios
+Agenda
+Pagos y cobros
+TU ESPACIO
+Soy prestador
+Mi perfil
+Ayuda y reclamos
+15 minutos. Algo resuelto.
+Tarifas claras, elegidas por quien ofrece. Vos elegís con quién conectar.
+Condiciones del servicio
+¿Qué necesitás resolver?
+⌘ K
+ Almagro
+Ana
+SIMULADOR LOCAL · SIN DINERO REAL
+Perfiles y fotos de ejemplo
+Cambiar perfil de prueba
+EXPLORAR
+Encontrá tu próxima conexión.
+
+Ayuda concreta, en el tiempo que necesitás. Siempre sabés cuánto vas a pagar.
+
+Guardados
+Todas
+Idiomas
+Tecnología
+Diseño
+Fotografía
+Organización
+Programación
+Redacción
+Todas las tarifas
+$ 1.000 / bloque
+$ 2.500 / bloque
+$ 5.000 / bloque
+Todos los barrios
+Almagro
+Caballito
+Villa Crespo
+Otro barrio
+Más recientes
+Menor precio
+Menor duración
+Filtrar
+1 resultado · solo servicios remotos para adultos
+Limpiar filtros
+Remoto · 18+
+Mateo Ríos
+Tu compu, sin vueltas
+
+Resolvemos juntos dudas de tu computadora por videollamada. No te pediré contraseñas ni acceso a tus cuentas.
+
+$ 2.500 / bloque de 15 min
+● Cuenta vinculada
+Comparar
+30 min habitual
+Ver servicio
+INTERA 5.0 · Bloques de 15 minutos · ARS
+Condiciones y privacidad
+Reclamos
+Experiencia visual
+Acordá tu servicio.
+
+Con Mateo Ríos · Tu compu, sin vueltas. La solicitud no genera un cobro. El prestador debe aceptar antes de que pagues.
+
+Cantidad de bloques
+Fecha y hora local
+Asociar a una necesidad
+Sin asociar
+Necesito ayuda para organizar una planilla
+Qué necesitás resolver
+4 bloques × $ 2.500
+1 h
+Total del servicio
+$ 10.000
+Comisión INTERA · 5% del bruto
+$ 500
+Prestador, antes de cargos externos
+$ 9.500
+
+El 5% está incluido: no se agrega como un recargo al total del servicio. Los cargos de Mercado Pago y las retenciones aplicables se descuentan por separado. El neto y la fecha de disponibilidad los informa Mercado Pago.
+
+Revisé el alcance, la duración, el precio y las condiciones vigentes. El precio de esta orden no cambia si el prestador modifica luego su publicación.
+crypto.randomUUID is not a function
+Enviar solicitud
+JS: []

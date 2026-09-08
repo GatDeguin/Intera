@@ -1,0 +1,16 @@
+{
+  "integrity": "ok",
+  "foreignKeyErrors": 0,
+  "unbalancedEntries": 0,
+  "users": 5,
+  "bookings": 1,
+  "unknownCheckouts": [],
+  "openReports": 0,
+  "jobs": [
+    {
+      "status": "DONE",
+      "n": 1
+    }
+  ],
+  "failedJobs": []
+}

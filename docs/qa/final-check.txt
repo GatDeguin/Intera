@@ -1,0 +1,5 @@
+
+> intera-marketplace@5.0.0 check
+> node tools/check.mjs
+
+41 archivos JavaScript: sintaxis válida.

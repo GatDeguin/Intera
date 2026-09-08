@@ -1,0 +1,56 @@
+TAP version 13
+# (node:5317) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: alta exige adulto y aceptación real; hash y sesión sin contraseña
+ok 1 - alta exige adulto y aceptación real; hash y sesión sin contraseña
+  ---
+  duration_ms: 277.949092
+  type: 'test'
+  ...
+# Subtest: tokens de correo se usan una sola vez, no otorgan sesión; reset revoca sesiones
+ok 2 - tokens de correo se usan una sola vez, no otorgan sesión; reset revoca sesiones
+  ---
+  duration_ms: 185.737372
+  type: 'test'
+  ...
+# Subtest: restablecer contraseña invalida también otros enlaces de recuperación pendientes
+not ok 3 - restablecer contraseña invalida también otros enlaces de recuperación pendientes
+  ---
+  duration_ms: 196.332222
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/auth.test.mjs:5:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected rejection.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/auth.test.mjs:5:287)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: comparación segura rechaza bytes de otra longitud sin lanzar error
+not ok 4 - comparación segura rechaza bytes de otra longitud sin lanzar error
+  ---
+  duration_ms: 1.096433
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/auth.test.mjs:6:1'
+  failureType: 'testCodeFailure'
+  error: 'Input buffers must have the same byte length'
+  code: 'ERR_CRYPTO_TIMING_SAFE_EQUAL_LENGTH'
+  name: 'RangeError'
+  stack: |-
+    equals (file:///mnt/data/intera-v5/server/security.mjs:9:116)
+    TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/auth.test.mjs:6:152)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 2
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 723.385908

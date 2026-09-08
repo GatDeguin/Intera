@@ -1,0 +1,291 @@
+TAP version 13
+# (node:1029) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cotización en servidor, una sola preferencia bajo concurrencia
+ok 1 - cotización en servidor, una sola preferencia bajo concurrencia
+  ---
+  duration_ms: 9.794176
+  type: 'test'
+  ...
+# Subtest: URL de retorno no se procesa: el pago lo determina GET de MP
+not ok 2 - URL de retorno no se procesa: el pago lo determina GET de MP
+  ---
+  duration_ms: 4.394622
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:6:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:6:191)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: pago repetido, ledger de doble entrada y finalización sin mover dinero
+not ok 3 - pago repetido, ledger de doble entrada y finalización sin mover dinero
+  ---
+  duration_ms: 3.366035
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:7:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:7:119)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rechaza pago por monto incorrecto
+ok 4 - rechaza pago por monto incorrecto
+  ---
+  duration_ms: 3.750081
+  type: 'test'
+  ...
+# Subtest: rechaza pago por moneda incorrecto
+ok 5 - rechaza pago por moneda incorrecto
+  ---
+  duration_ms: 3.856258
+  type: 'test'
+  ...
+# Subtest: rechaza pago por vendedor incorrecto
+ok 6 - rechaza pago por vendedor incorrecto
+  ---
+  duration_ms: 2.985573
+  type: 'test'
+  ...
+# Subtest: rechaza pago por referencia incorrecto
+ok 7 - rechaza pago por referencia incorrecto
+  ---
+  duration_ms: 2.805879
+  type: 'test'
+  ...
+# Subtest: rechaza pago por ambiente incorrecto
+ok 8 - rechaza pago por ambiente incorrecto
+  ---
+  duration_ms: 3.336331
+  type: 'test'
+  ...
+# Subtest: rechaza pago por comision incorrecto
+ok 9 - rechaza pago por comision incorrecto
+  ---
+  duration_ms: 3.708099
+  type: 'test'
+  ...
+# Subtest: rechazado o pendiente no habilita prestación
+not ok 10 - rechazado o pendiente no habilita prestación
+  ---
+  duration_ms: 3.520352
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:9:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:9:85)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: cancelación con pago pide devolución y se confirma con MP
+not ok 11 - cancelación con pago pide devolución y se confirma con MP
+  ---
+  duration_ms: 4.388543
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:10:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:10:98)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: pago tardío de orden cancelada no la reactiva y se devuelve
+not ok 12 - pago tardío de orden cancelada no la reactiva y se devuelve
+  ---
+  duration_ms: 3.738124
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:11:175)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: doble pago real detectado y segundo pago devuelto con clave estable
+not ok 13 - doble pago real detectado y segundo pago devuelto con clave estable
+  ---
+  duration_ms: 3.277575
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:12:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:12:117)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: devolución parcial ajusta comisión por cumulativo sin destruir asientos
+not ok 14 - devolución parcial ajusta comisión por cumulativo sin destruir asientos
+  ---
+  duration_ms: 2.957912
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:13:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:13:120)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: contracargo bloquea operaciones sin presentarlo como devolución voluntaria
+not ok 15 - contracargo bloquea operaciones sin presentarlo como devolución voluntaria
+  ---
+  duration_ms: 3.358134
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:14:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:14:123)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: no se degrada un estado con una lectura vieja de MP
+not ok 16 - no se degrada un estado con una lectura vieja de MP
+  ---
+  duration_ms: 3.625007
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:15:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:15:100)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ampliación tiene tarifa original, requiere pago separado y no cambia el bruto original
+not ok 17 - ampliación tiene tarifa original, requiere pago separado y no cambia el bruto original
+  ---
+  duration_ms: 3.743632
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:16:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:16:127)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: fallo de conexión al crear preferencia queda UNKNOWN y no crea otra
+ok 18 - fallo de conexión al crear preferencia queda UNKNOWN y no crea otra
+  ---
+  duration_ms: 4.730988
+  type: 'test'
+  ...
+# Subtest: pago aprobado no significa dinero disponible
+not ok 19 - pago aprobado no significa dinero disponible
+  ---
+  duration_ms: 2.851265
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/payments.test.mjs:18:1'
+  failureType: 'testCodeFailure'
+  error: 'table payments has 14 columns but 15 values were supplied'
+  code: 'ERR_SQLITE_ERROR'
+  stack: |-
+    Store.run (file:///mnt/data/intera-v5/server/db/store.mjs:17:37)
+    file:///mnt/data/intera-v5/server/payments.mjs:35:10
+    Store.tx (file:///mnt/data/intera-v5/server/db/store.mjs:18:93)
+    Payments.applyPayment (file:///mnt/data/intera-v5/server/payments.mjs:33:41)
+    file:///mnt/data/intera-v5/server/payments.mjs:23:313
+    async Payments.lock (file:///mnt/data/intera-v5/server/payments.mjs:7:140)
+    async approved (file:///mnt/data/intera-v5/tests/payments.test.mjs:4:114)
+    async TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/payments.test.mjs:18:85)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 8
+# fail 11
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 147.936364

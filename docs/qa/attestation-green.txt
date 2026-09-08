@@ -1,0 +1,96 @@
+TAP version 13
+# (node:2861) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: ofertas pausadas privadas para el prestador, no para otra cuenta
+ok 1 - ofertas pausadas privadas para el prestador, no para otra cuenta
+  ---
+  duration_ms: 6.8324
+  type: 'test'
+  ...
+# Subtest: snapshot monetario inmutable aun mediante SQL directo
+ok 2 - snapshot monetario inmutable aun mediante SQL directo
+  ---
+  duration_ms: 5.890495
+  type: 'test'
+  ...
+# Subtest: refrescar token no reactiva los cobros que el prestador pausó
+ok 3 - refrescar token no reactiva los cobros que el prestador pausó
+  ---
+  duration_ms: 4.870325
+  type: 'test'
+  ...
+# Subtest: contracargo no se revierte automáticamente con estado posterior contradictorio
+ok 4 - contracargo no se revierte automáticamente con estado posterior contradictorio
+  ---
+  duration_ms: 7.28086
+  type: 'test'
+  ...
+# Subtest: necesidad vinculada respeta la tarifa máxima de quien solicita
+ok 5 - necesidad vinculada respeta la tarifa máxima de quien solicita
+  ---
+  duration_ms: 3.25641
+  type: 'test'
+  ...
+# Subtest: un reclamo inválido no cambia el estado del servicio
+ok 6 - un reclamo inválido no cambia el estado del servicio
+  ---
+  duration_ms: 3.250541
+  type: 'test'
+  ...
+# Subtest: HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+ok 7 - HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+  ---
+  duration_ms: 2.43379
+  type: 'test'
+  ...
+# Subtest: PKCE y cifrado con autenticación y asociación por cuenta
+ok 8 - PKCE y cifrado con autenticación y asociación por cuenta
+  ---
+  duration_ms: 1.250339
+  type: 'test'
+  ...
+# Subtest: URL de checkout solo origen permitido
+ok 9 - URL de checkout solo origen permitido
+  ---
+  duration_ms: 0.311658
+  type: 'test'
+  ...
+# Subtest: adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+ok 10 - adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+  ---
+  duration_ms: 16.774826
+  type: 'test'
+  ...
+# Subtest: Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+ok 11 - Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+  ---
+  duration_ms: 0.988264
+  type: 'test'
+  ...
+# Subtest: error de crear preferencia no se reintenta automáticamente; no filtra secretos
+ok 12 - error de crear preferencia no se reintenta automáticamente; no filtra secretos
+  ---
+  duration_ms: 0.674452
+  type: 'test'
+  ...
+# Subtest: reembolso usa clave estable y ruta del pago
+ok 13 - reembolso usa clave estable y ruta del pago
+  ---
+  duration_ms: 0.398607
+  type: 'test'
+  ...
+# Subtest: pago se vincula a la preferencia y aplicación, no solo a una referencia declarada
+ok 14 - pago se vincula a la preferencia y aplicación, no solo a una referencia declarada
+  ---
+  duration_ms: 1.446848
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 107.830617

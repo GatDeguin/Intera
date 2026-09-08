@@ -1,0 +1,9 @@
+FAIL gross preview
+Traceback (most recent call last):
+  File "/mnt/data/intera-v5/tests/qa/browser.py", line 58, in <module>
+    route('/publicar');page.locator('[name="title"]').fill('Asistencia remota v5 de prueba');page.locator('textarea[name="description"]').fill('Una sesión de soporte para adultos. Incluye explicación y revisión de una tarea digital.');page.locator('input[name="priceArs"][value="5000"]').check();page.locator('[name="blocks"]').fill('4');page.locator('[name="sellerFeeAccepted"]').check();check('gross preview', '$20.000' in page.locator('#price-preview').inner_text());page.screenshot(path=str(OUT/'screenshots/publicar-desktop.png'),full_page=True)
+                                                                                                                                                                                                                                                                                                                                                                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/intera-v5/tests/qa/browser.py", line 14, in check
+    if not condition:raise AssertionError(label)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: gross preview

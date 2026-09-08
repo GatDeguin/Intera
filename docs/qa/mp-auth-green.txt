@@ -1,0 +1,66 @@
+TAP version 13
+# (node:965) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: alta exige adulto y aceptación real; hash y sesión sin contraseña
+ok 1 - alta exige adulto y aceptación real; hash y sesión sin contraseña
+  ---
+  duration_ms: 308.5558
+  type: 'test'
+  ...
+# Subtest: tokens de correo se usan una sola vez, no otorgan sesión; reset revoca sesiones
+ok 2 - tokens de correo se usan una sola vez, no otorgan sesión; reset revoca sesiones
+  ---
+  duration_ms: 220.082939
+  type: 'test'
+  ...
+# Subtest: HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+ok 3 - HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+  ---
+  duration_ms: 1.853055
+  type: 'test'
+  ...
+# Subtest: PKCE y cifrado con autenticación y asociación por cuenta
+ok 4 - PKCE y cifrado con autenticación y asociación por cuenta
+  ---
+  duration_ms: 1.287013
+  type: 'test'
+  ...
+# Subtest: URL de checkout solo origen permitido
+ok 5 - URL de checkout solo origen permitido
+  ---
+  duration_ms: 0.231911
+  type: 'test'
+  ...
+# Subtest: adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+ok 6 - adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+  ---
+  duration_ms: 34.981235
+  type: 'test'
+  ...
+# Subtest: Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+ok 7 - Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+  ---
+  duration_ms: 1.448421
+  type: 'test'
+  ...
+# Subtest: error de crear preferencia no se reintenta automáticamente; no filtra secretos
+ok 8 - error de crear preferencia no se reintenta automáticamente; no filtra secretos
+  ---
+  duration_ms: 0.819295
+  type: 'test'
+  ...
+# Subtest: reembolso usa clave estable y ruta del pago
+ok 9 - reembolso usa clave estable y ruta del pago
+  ---
+  duration_ms: 0.563799
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 594.278616

@@ -1,0 +1,100 @@
+TAP version 13
+# Subtest: 1 bloques de 1000: tiempo y comisión exactos
+ok 1 - 1 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 1.071176
+  type: 'test'
+  ...
+# Subtest: 2 bloques de 1000: tiempo y comisión exactos
+ok 2 - 2 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.096051
+  type: 'test'
+  ...
+# Subtest: 4 bloques de 1000: tiempo y comisión exactos
+ok 3 - 4 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.113977
+  type: 'test'
+  ...
+# Subtest: 32 bloques de 1000: tiempo y comisión exactos
+ok 4 - 32 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.069942
+  type: 'test'
+  ...
+# Subtest: 1 bloques de 2500: tiempo y comisión exactos
+ok 5 - 1 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.065556
+  type: 'test'
+  ...
+# Subtest: 2 bloques de 2500: tiempo y comisión exactos
+ok 6 - 2 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.085516
+  type: 'test'
+  ...
+# Subtest: 4 bloques de 2500: tiempo y comisión exactos
+ok 7 - 4 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.060849
+  type: 'test'
+  ...
+# Subtest: 32 bloques de 2500: tiempo y comisión exactos
+ok 8 - 32 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.094409
+  type: 'test'
+  ...
+# Subtest: 1 bloques de 5000: tiempo y comisión exactos
+ok 9 - 1 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.269216
+  type: 'test'
+  ...
+# Subtest: 2 bloques de 5000: tiempo y comisión exactos
+ok 10 - 2 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.307422
+  type: 'test'
+  ...
+# Subtest: 4 bloques de 5000: tiempo y comisión exactos
+ok 11 - 4 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.10835
+  type: 'test'
+  ...
+# Subtest: 32 bloques de 5000: tiempo y comisión exactos
+ok 12 - 32 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.08211
+  type: 'test'
+  ...
+# Subtest: 1000, 2500 y 5000 son los únicos precios
+ok 13 - 1000, 2500 y 5000 son los únicos precios
+  ---
+  duration_ms: 0.806406
+  type: 'test'
+  ...
+# Subtest: bloques enteros positivos acotados
+ok 14 - bloques enteros positivos acotados
+  ---
+  duration_ms: 0.187015
+  type: 'test'
+  ...
+# Subtest: decimal monetario sin redondeo binario oculto
+ok 15 - decimal monetario sin redondeo binario oculto
+  ---
+  duration_ms: 0.2851
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 61.891291

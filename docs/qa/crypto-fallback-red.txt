@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: resumen visible calcula bruto y comisión de las tres tarifas
+ok 1 - resumen visible calcula bruto y comisión de las tres tarifas
+  ---
+  duration_ms: 12.380171
+  type: 'test'
+  ...
+# Subtest: texto escapado y CSV neutraliza fórmulas
+ok 2 - texto escapado y CSV neutraliza fórmulas
+  ---
+  duration_ms: 0.338578
+  type: 'test'
+  ...
+# Subtest: ICS contiene UTC, duración y escapa texto sin invitar terceros
+ok 3 - ICS contiene UTC, duración y escapa texto sin invitar terceros
+  ---
+  duration_ms: 2.050967
+  type: 'test'
+  ...
+# Subtest: rutas del cliente no dependen de un origen externo
+ok 4 - rutas del cliente no dependen de un origen externo
+  ---
+  duration_ms: 0.40763
+  type: 'test'
+  ...
+# Subtest: clave de petición usa aleatoriedad criptográfica sin exigir randomUUID
+not ok 5 - clave de petición usa aleatoriedad criptográfica sin exigir randomUUID
+  ---
+  duration_ms: 1.025298
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/presentation.test.mjs:6:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/presentation.test.mjs:6:154)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 4
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 71.832955

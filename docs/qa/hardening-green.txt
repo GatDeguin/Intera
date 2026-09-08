@@ -1,0 +1,36 @@
+TAP version 13
+# (node:1181) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: ofertas pausadas privadas para el prestador, no para otra cuenta
+ok 1 - ofertas pausadas privadas para el prestador, no para otra cuenta
+  ---
+  duration_ms: 6.615919
+  type: 'test'
+  ...
+# Subtest: snapshot monetario inmutable aun mediante SQL directo
+ok 2 - snapshot monetario inmutable aun mediante SQL directo
+  ---
+  duration_ms: 4.77366
+  type: 'test'
+  ...
+# Subtest: refrescar token no reactiva los cobros que el prestador pausó
+ok 3 - refrescar token no reactiva los cobros que el prestador pausó
+  ---
+  duration_ms: 4.050476
+  type: 'test'
+  ...
+# Subtest: contracargo no se revierte automáticamente con estado posterior contradictorio
+ok 4 - contracargo no se revierte automáticamente con estado posterior contradictorio
+  ---
+  duration_ms: 6.812598
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 91.82411

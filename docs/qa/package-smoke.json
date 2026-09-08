@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "ambientes y cookies separadas",
+    "precio y comisión congelados",
+    "idempotencia nativa HTTP",
+    "pago verificado por servidor mock",
+    "finalizar no genera transferencia adicional",
+    "review ciega aplicada en servidor",
+    "review bilateral revelada",
+    "sin secretos en export propio",
+    "privado /server/config.mjs",
+    "privado /.env",
+    "privado /data/intera-mock.sqlite",
+    "HTML servido por el paquete"
+  ],
+  "count": 12,
+  "order": "d1ff798c-f63d-4c2a-8bd5-b9bdc045dd4b",
+  "base": "http://127.0.0.1:4191",
+  "mode": "mock"
+}

@@ -1,0 +1,152 @@
+TAP version 13
+# (node:2814) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: ofertas pausadas privadas para el prestador, no para otra cuenta
+ok 1 - ofertas pausadas privadas para el prestador, no para otra cuenta
+  ---
+  duration_ms: 7.353357
+  type: 'test'
+  ...
+# Subtest: snapshot monetario inmutable aun mediante SQL directo
+ok 2 - snapshot monetario inmutable aun mediante SQL directo
+  ---
+  duration_ms: 6.735128
+  type: 'test'
+  ...
+# Subtest: refrescar token no reactiva los cobros que el prestador pausó
+ok 3 - refrescar token no reactiva los cobros que el prestador pausó
+  ---
+  duration_ms: 6.36959
+  type: 'test'
+  ...
+# Subtest: contracargo no se revierte automáticamente con estado posterior contradictorio
+ok 4 - contracargo no se revierte automáticamente con estado posterior contradictorio
+  ---
+  duration_ms: 9.270317
+  type: 'test'
+  ...
+# Subtest: necesidad vinculada respeta la tarifa máxima de quien solicita
+not ok 5 - necesidad vinculada respeta la tarifa máxima de quien solicita
+  ---
+  duration_ms: 4.421164
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/hardening.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    code: 'NEED'
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/hardening.test.mjs:8:336)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: un reclamo inválido no cambia el estado del servicio
+not ok 6 - un reclamo inválido no cambia el estado del servicio
+  ---
+  duration_ms: 6.338815
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/hardening.test.mjs:9:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'DISPUTED'
+    - 'ACCEPTED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'ACCEPTED'
+  actual: 'DISPUTED'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/hardening.test.mjs:9:182)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+ok 7 - HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+  ---
+  duration_ms: 2.647364
+  type: 'test'
+  ...
+# Subtest: PKCE y cifrado con autenticación y asociación por cuenta
+ok 8 - PKCE y cifrado con autenticación y asociación por cuenta
+  ---
+  duration_ms: 1.626803
+  type: 'test'
+  ...
+# Subtest: URL de checkout solo origen permitido
+ok 9 - URL de checkout solo origen permitido
+  ---
+  duration_ms: 0.303957
+  type: 'test'
+  ...
+# Subtest: adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+ok 10 - adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+  ---
+  duration_ms: 24.124417
+  type: 'test'
+  ...
+# Subtest: Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+ok 11 - Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+  ---
+  duration_ms: 1.451996
+  type: 'test'
+  ...
+# Subtest: error de crear preferencia no se reintenta automáticamente; no filtra secretos
+ok 12 - error de crear preferencia no se reintenta automáticamente; no filtra secretos
+  ---
+  duration_ms: 0.842289
+  type: 'test'
+  ...
+# Subtest: reembolso usa clave estable y ruta del pago
+ok 13 - reembolso usa clave estable y ruta del pago
+  ---
+  duration_ms: 0.59102
+  type: 'test'
+  ...
+# Subtest: pago se vincula a la preferencia y aplicación, no solo a una referencia declarada
+not ok 14 - pago se vincula a la preferencia y aplicación, no solo a una referencia declarada
+  ---
+  duration_ms: 1.276097
+  type: 'test'
+  location: '/mnt/data/intera-v5/tests/mp.test.mjs:19:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/intera-v5/tests/mp.test.mjs:19:710)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 11
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 121.510998

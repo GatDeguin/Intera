@@ -1,0 +1,60 @@
+TAP version 13
+# (node:899) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: orden conserva snapshot monetario y solo prestador puede aceptar
+ok 1 - orden conserva snapshot monetario y solo prestador puede aceptar
+  ---
+  duration_ms: 9.970936
+  type: 'test'
+  ...
+# Subtest: rechaza tarifa no permitida, auto contratación y aceptación de quote ausente
+ok 2 - rechaza tarifa no permitida, auto contratación y aceptación de quote ausente
+  ---
+  duration_ms: 2.282075
+  type: 'test'
+  ...
+# Subtest: precio manipulado o cambiado exige nueva confirmación
+ok 3 - precio manipulado o cambiado exige nueva confirmación
+  ---
+  duration_ms: 2.775219
+  type: 'test'
+  ...
+# Subtest: idempotencia de reserva ata actor y payload
+ok 4 - idempotencia de reserva ata actor y payload
+  ---
+  duration_ms: 3.289495
+  type: 'test'
+  ...
+# Subtest: términos exigidos en servidor y versionados; cancelación permitida sin reaceptar
+ok 5 - términos exigidos en servidor y versionados; cancelación permitida sin reaceptar
+  ---
+  duration_ms: 3.253392
+  type: 'test'
+  ...
+# Subtest: no double booking entre dos aceptaciones
+ok 6 - no double booking entre dos aceptaciones
+  ---
+  duration_ms: 3.000761
+  type: 'test'
+  ...
+# Subtest: presencial, inicio sin pago y mensajes ajenos bloqueados
+ok 7 - presencial, inicio sin pago y mensajes ajenos bloqueados
+  ---
+  duration_ms: 3.475999
+  type: 'test'
+  ...
+# Subtest: valoraciones bilaterales no se entregan a otra parte antes de revelar
+ok 8 - valoraciones bilaterales no se entregan a otra parte antes de revelar
+  ---
+  duration_ms: 2.801247
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 123.041864

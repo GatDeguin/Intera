@@ -1,0 +1,486 @@
+
+> intera-marketplace@5.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# (node:3046) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: alta exige adulto y aceptación real; hash y sesión sin contraseña
+ok 1 - alta exige adulto y aceptación real; hash y sesión sin contraseña
+  ---
+  duration_ms: 335.710325
+  type: 'test'
+  ...
+# Subtest: tokens de correo se usan una sola vez, no otorgan sesión; reset revoca sesiones
+ok 2 - tokens de correo se usan una sola vez, no otorgan sesión; reset revoca sesiones
+  ---
+  duration_ms: 195.058155
+  type: 'test'
+  ...
+# (node:3047) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: ofertas pausadas privadas para el prestador, no para otra cuenta
+ok 3 - ofertas pausadas privadas para el prestador, no para otra cuenta
+  ---
+  duration_ms: 7.92496
+  type: 'test'
+  ...
+# Subtest: snapshot monetario inmutable aun mediante SQL directo
+ok 4 - snapshot monetario inmutable aun mediante SQL directo
+  ---
+  duration_ms: 6.345277
+  type: 'test'
+  ...
+# Subtest: refrescar token no reactiva los cobros que el prestador pausó
+ok 5 - refrescar token no reactiva los cobros que el prestador pausó
+  ---
+  duration_ms: 5.012599
+  type: 'test'
+  ...
+# Subtest: contracargo no se revierte automáticamente con estado posterior contradictorio
+ok 6 - contracargo no se revierte automáticamente con estado posterior contradictorio
+  ---
+  duration_ms: 15.01335
+  type: 'test'
+  ...
+# Subtest: necesidad vinculada respeta la tarifa máxima de quien solicita
+ok 7 - necesidad vinculada respeta la tarifa máxima de quien solicita
+  ---
+  duration_ms: 7.234696
+  type: 'test'
+  ...
+# Subtest: un reclamo inválido no cambia el estado del servicio
+ok 8 - un reclamo inválido no cambia el estado del servicio
+  ---
+  duration_ms: 5.791403
+  type: 'test'
+  ...
+# (node:3049) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: config sin secretos, sesión saneada y archivos internos inaccesibles
+ok 9 - config sin secretos, sesión saneada y archivos internos inaccesibles
+  ---
+  duration_ms: 47.785084
+  type: 'test'
+  ...
+# Subtest: CSRF, origen ajeno y sesión ausente bloquean escrituras
+ok 10 - CSRF, origen ajeno y sesión ausente bloquean escrituras
+  ---
+  duration_ms: 22.638308
+  type: 'test'
+  ...
+# Subtest: sin aceptación actual servidor rechaza aunque UI envíe cualquier bandera
+ok 11 - sin aceptación actual servidor rechaza aunque UI envíe cualquier bandera
+  ---
+  duration_ms: 8.653731
+  type: 'test'
+  ...
+# Subtest: retorno de checkout no acredita dinero y endpoint privado no expone orden ajena
+ok 12 - retorno de checkout no acredita dinero y endpoint privado no expone orden ajena
+  ---
+  duration_ms: 10.497762
+  type: 'test'
+  ...
+# Subtest: webhook firmado se encola, duplicado deduplicado y GET verifica
+ok 13 - webhook firmado se encola, duplicado deduplicado y GET verifica
+  ---
+  duration_ms: 19.384566
+  type: 'test'
+  ...
+# Subtest: los accesos de simulación no existen fuera de mock
+ok 14 - los accesos de simulación no existen fuera de mock
+  ---
+  duration_ms: 7.957088
+  type: 'test'
+  ...
+# Subtest: HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+ok 15 - HMAC exacto, data.id de URL, rechazo de firma/cuerpo alterados y repetición verificable
+  ---
+  duration_ms: 2.342804
+  type: 'test'
+  ...
+# Subtest: PKCE y cifrado con autenticación y asociación por cuenta
+ok 16 - PKCE y cifrado con autenticación y asociación por cuenta
+  ---
+  duration_ms: 1.363154
+  type: 'test'
+  ...
+# Subtest: URL de checkout solo origen permitido
+ok 17 - URL de checkout solo origen permitido
+  ---
+  duration_ms: 0.262707
+  type: 'test'
+  ...
+# Subtest: adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+ok 18 - adapter OAuth PKCE y test_token explícito; refresh conserva identidad
+  ---
+  duration_ms: 20.869709
+  type: 'test'
+  ...
+# Subtest: Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+ok 19 - Checkout Pro usa token del vendedor y marketplace_fee 5% del bruto
+  ---
+  duration_ms: 1.335523
+  type: 'test'
+  ...
+# Subtest: error de crear preferencia no se reintenta automáticamente; no filtra secretos
+ok 20 - error de crear preferencia no se reintenta automáticamente; no filtra secretos
+  ---
+  duration_ms: 0.709052
+  type: 'test'
+  ...
+# Subtest: reembolso usa clave estable y ruta del pago
+ok 21 - reembolso usa clave estable y ruta del pago
+  ---
+  duration_ms: 0.500937
+  type: 'test'
+  ...
+# Subtest: pago se vincula a la preferencia y aplicación, no solo a una referencia declarada
+ok 22 - pago se vincula a la preferencia y aplicación, no solo a una referencia declarada
+  ---
+  duration_ms: 1.917799
+  type: 'test'
+  ...
+# (node:3090) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: bloqueo impide dos servidores para la misma base y se libera explícitamente
+ok 23 - bloqueo impide dos servidores para la misma base y se libera explícitamente
+  ---
+  duration_ms: 5.46249
+  type: 'test'
+  ...
+# Subtest: backup consistente se restaura con integridad y no se sobreescribe
+ok 24 - backup consistente se restaura con integridad y no se sobreescribe
+  ---
+  duration_ms: 8.802249
+  type: 'test'
+  ...
+# (node:3101) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cotización en servidor, una sola preferencia bajo concurrencia
+ok 25 - cotización en servidor, una sola preferencia bajo concurrencia
+  ---
+  duration_ms: 10.909397
+  type: 'test'
+  ...
+# Subtest: URL de retorno no se procesa: el pago lo determina GET de MP
+ok 26 - URL de retorno no se procesa: el pago lo determina GET de MP
+  ---
+  duration_ms: 5.722592
+  type: 'test'
+  ...
+# Subtest: pago repetido, ledger de doble entrada y finalización sin mover dinero
+ok 27 - pago repetido, ledger de doble entrada y finalización sin mover dinero
+  ---
+  duration_ms: 8.422181
+  type: 'test'
+  ...
+# Subtest: rechaza pago por monto incorrecto
+ok 28 - rechaza pago por monto incorrecto
+  ---
+  duration_ms: 3.85044
+  type: 'test'
+  ...
+# Subtest: rechaza pago por moneda incorrecto
+ok 29 - rechaza pago por moneda incorrecto
+  ---
+  duration_ms: 3.124303
+  type: 'test'
+  ...
+# Subtest: rechaza pago por vendedor incorrecto
+ok 30 - rechaza pago por vendedor incorrecto
+  ---
+  duration_ms: 2.985589
+  type: 'test'
+  ...
+# Subtest: rechaza pago por referencia incorrecto
+ok 31 - rechaza pago por referencia incorrecto
+  ---
+  duration_ms: 3.235926
+  type: 'test'
+  ...
+# Subtest: rechaza pago por ambiente incorrecto
+ok 32 - rechaza pago por ambiente incorrecto
+  ---
+  duration_ms: 3.002664
+  type: 'test'
+  ...
+# Subtest: rechaza pago por comision incorrecto
+ok 33 - rechaza pago por comision incorrecto
+  ---
+  duration_ms: 3.452144
+  type: 'test'
+  ...
+# Subtest: rechazado o pendiente no habilita prestación
+ok 34 - rechazado o pendiente no habilita prestación
+  ---
+  duration_ms: 6.038667
+  type: 'test'
+  ...
+# Subtest: cancelación con pago pide devolución y se confirma con MP
+ok 35 - cancelación con pago pide devolución y se confirma con MP
+  ---
+  duration_ms: 5.706239
+  type: 'test'
+  ...
+# Subtest: pago tardío de orden cancelada no la reactiva y se devuelve
+ok 36 - pago tardío de orden cancelada no la reactiva y se devuelve
+  ---
+  duration_ms: 3.744945
+  type: 'test'
+  ...
+# Subtest: doble pago real detectado y segundo pago devuelto con clave estable
+ok 37 - doble pago real detectado y segundo pago devuelto con clave estable
+  ---
+  duration_ms: 5.260945
+  type: 'test'
+  ...
+# Subtest: devolución parcial ajusta comisión por cumulativo sin destruir asientos
+ok 38 - devolución parcial ajusta comisión por cumulativo sin destruir asientos
+  ---
+  duration_ms: 4.801104
+  type: 'test'
+  ...
+# Subtest: contracargo bloquea operaciones sin presentarlo como devolución voluntaria
+ok 39 - contracargo bloquea operaciones sin presentarlo como devolución voluntaria
+  ---
+  duration_ms: 4.895782
+  type: 'test'
+  ...
+# Subtest: no se degrada un estado con una lectura vieja de MP
+ok 40 - no se degrada un estado con una lectura vieja de MP
+  ---
+  duration_ms: 4.204196
+  type: 'test'
+  ...
+# Subtest: ampliación tiene tarifa original, requiere pago separado y no cambia el bruto original
+ok 41 - ampliación tiene tarifa original, requiere pago separado y no cambia el bruto original
+  ---
+  duration_ms: 4.453583
+  type: 'test'
+  ...
+# Subtest: fallo de conexión al crear preferencia queda UNKNOWN y no crea otra
+ok 42 - fallo de conexión al crear preferencia queda UNKNOWN y no crea otra
+  ---
+  duration_ms: 3.220698
+  type: 'test'
+  ...
+# Subtest: pago aprobado no significa dinero disponible
+ok 43 - pago aprobado no significa dinero disponible
+  ---
+  duration_ms: 3.24218
+  type: 'test'
+  ...
+# Subtest: resumen visible calcula bruto y comisión de las tres tarifas
+ok 44 - resumen visible calcula bruto y comisión de las tres tarifas
+  ---
+  duration_ms: 17.158062
+  type: 'test'
+  ...
+# Subtest: texto escapado y CSV neutraliza fórmulas
+ok 45 - texto escapado y CSV neutraliza fórmulas
+  ---
+  duration_ms: 0.468479
+  type: 'test'
+  ...
+# Subtest: ICS contiene UTC, duración y escapa texto sin invitar terceros
+ok 46 - ICS contiene UTC, duración y escapa texto sin invitar terceros
+  ---
+  duration_ms: 2.219322
+  type: 'test'
+  ...
+# Subtest: rutas del cliente no dependen de un origen externo
+ok 47 - rutas del cliente no dependen de un origen externo
+  ---
+  duration_ms: 0.504211
+  type: 'test'
+  ...
+# Subtest: clave de petición usa aleatoriedad criptográfica sin exigir randomUUID
+ok 48 - clave de petición usa aleatoriedad criptográfica sin exigir randomUUID
+  ---
+  duration_ms: 2.419657
+  type: 'test'
+  ...
+# Subtest: 1 bloques de 1000: tiempo y comisión exactos
+ok 49 - 1 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 1.09428
+  type: 'test'
+  ...
+# Subtest: 2 bloques de 1000: tiempo y comisión exactos
+ok 50 - 2 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.121639
+  type: 'test'
+  ...
+# Subtest: 4 bloques de 1000: tiempo y comisión exactos
+ok 51 - 4 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.165363
+  type: 'test'
+  ...
+# Subtest: 32 bloques de 1000: tiempo y comisión exactos
+ok 52 - 32 bloques de 1000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.087599
+  type: 'test'
+  ...
+# Subtest: 1 bloques de 2500: tiempo y comisión exactos
+ok 53 - 1 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.075391
+  type: 'test'
+  ...
+# Subtest: 2 bloques de 2500: tiempo y comisión exactos
+ok 54 - 2 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.068992
+  type: 'test'
+  ...
+# Subtest: 4 bloques de 2500: tiempo y comisión exactos
+ok 55 - 4 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.058877
+  type: 'test'
+  ...
+# Subtest: 32 bloques de 2500: tiempo y comisión exactos
+ok 56 - 32 bloques de 2500: tiempo y comisión exactos
+  ---
+  duration_ms: 0.057034
+  type: 'test'
+  ...
+# Subtest: 1 bloques de 5000: tiempo y comisión exactos
+ok 57 - 1 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.247123
+  type: 'test'
+  ...
+# Subtest: 2 bloques de 5000: tiempo y comisión exactos
+ok 58 - 2 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.313291
+  type: 'test'
+  ...
+# Subtest: 4 bloques de 5000: tiempo y comisión exactos
+ok 59 - 4 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.11547
+  type: 'test'
+  ...
+# Subtest: 32 bloques de 5000: tiempo y comisión exactos
+ok 60 - 32 bloques de 5000: tiempo y comisión exactos
+  ---
+  duration_ms: 0.05457
+  type: 'test'
+  ...
+# Subtest: 1000, 2500 y 5000 son los únicos precios
+ok 61 - 1000, 2500 y 5000 son los únicos precios
+  ---
+  duration_ms: 0.8158
+  type: 'test'
+  ...
+# Subtest: bloques enteros positivos acotados
+ok 62 - bloques enteros positivos acotados
+  ---
+  duration_ms: 0.160936
+  type: 'test'
+  ...
+# Subtest: decimal monetario sin redondeo binario oculto
+ok 63 - decimal monetario sin redondeo binario oculto
+  ---
+  duration_ms: 0.371406
+  type: 'test'
+  ...
+# (node:3134) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: instalación vacía reproducible y fixtures sin consentimientos ficticios
+ok 64 - instalación vacía reproducible y fixtures sin consentimientos ficticios
+  ---
+  duration_ms: 8.928205
+  type: 'test'
+  ...
+# Subtest: mock no se puede exponer y live no arranca con configuración incompleta
+ok 65 - mock no se puede exponer y live no arranca con configuración incompleta
+  ---
+  duration_ms: 0.509289
+  type: 'test'
+  ...
+# (node:3140) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: orden conserva snapshot monetario y solo prestador puede aceptar
+ok 66 - orden conserva snapshot monetario y solo prestador puede aceptar
+  ---
+  duration_ms: 9.324508
+  type: 'test'
+  ...
+# Subtest: rechaza tarifa no permitida, auto contratación y aceptación de quote ausente
+ok 67 - rechaza tarifa no permitida, auto contratación y aceptación de quote ausente
+  ---
+  duration_ms: 2.776064
+  type: 'test'
+  ...
+# Subtest: precio manipulado o cambiado exige nueva confirmación
+ok 68 - precio manipulado o cambiado exige nueva confirmación
+  ---
+  duration_ms: 4.263903
+  type: 'test'
+  ...
+# Subtest: idempotencia de reserva ata actor y payload
+ok 69 - idempotencia de reserva ata actor y payload
+  ---
+  duration_ms: 4.002278
+  type: 'test'
+  ...
+# Subtest: términos exigidos en servidor y versionados; cancelación permitida sin reaceptar
+ok 70 - términos exigidos en servidor y versionados; cancelación permitida sin reaceptar
+  ---
+  duration_ms: 3.6157
+  type: 'test'
+  ...
+# Subtest: no double booking entre dos aceptaciones
+ok 71 - no double booking entre dos aceptaciones
+  ---
+  duration_ms: 3.672543
+  type: 'test'
+  ...
+# Subtest: presencial, inicio sin pago y mensajes ajenos bloqueados
+ok 72 - presencial, inicio sin pago y mensajes ajenos bloqueados
+  ---
+  duration_ms: 4.008859
+  type: 'test'
+  ...
+# Subtest: valoraciones bilaterales no se entregan a otra parte antes de revelar
+ok 73 - valoraciones bilaterales no se entregan a otra parte antes de revelar
+  ---
+  duration_ms: 3.55509
+  type: 'test'
+  ...
+# (node:3156) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cola persistente ejecuta notificación y devolución sin navegador
+ok 74 - cola persistente ejecuta notificación y devolución sin navegador
+  ---
+  duration_ms: 16.612861
+  type: 'test'
+  ...
+# Subtest: vencimiento de propuesta y pago pendiente funciona con reloj de servidor
+ok 75 - vencimiento de propuesta y pago pendiente funciona con reloj de servidor
+  ---
+  duration_ms: 4.904606
+  type: 'test'
+  ...
+# Subtest: fallos quedan en cola con retry sin exponer texto del proveedor
+ok 76 - fallos quedan en cola con retry sin exponer texto del proveedor
+  ---
+  duration_ms: 2.676518
+  type: 'test'
+  ...
+1..76
+# tests 76
+# suites 0
+# pass 76
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 598.518303
