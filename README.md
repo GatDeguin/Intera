@@ -1,100 +1,126 @@
-# INTERA v4 — Experiencia HTML autocontenida
+# INTERA v5 · Servicios pagos por bloques
 
-**Demo local funcional. Sin instalación para abrirla.** La interfaz, las imágenes y el JavaScript están incluidos en `INTERA.html`. No es una captura ni una maqueta estática.
+**Versión 5.0.0 · 8 de septiembre de 2026.** Repositorio completo del cambio de modelo: aplicación web + servidor + base persistente + integración REST de Mercado Pago + simulador local + pruebas.
 
-## Abrir
+> **Estado de entrega:** implementación ejecutable con pagos simulados y adaptador real preparado. No hay una cuenta de Mercado Pago conectada en esta entrega. No se ejecutaron transacciones en sandbox ni live del proveedor. Activación comercial, credenciales, OAuth de prestadores, dominio HTTPS y validaciones legales/contables están pendientes. No es una certificación de producción.
 
-Guardá `INTERA.html` y abrilo con un navegador. En Windows también podés usar `ABRIR_INTERA.bat`, después de descomprimir el paquete. No necesitás Node.js, npm, extensiones, fuentes ni dependencias para probar este HTML.
+## Nuevo modelo, sin ambigüedades
 
-Si se abre en un editor, elegí **Abrir con → tu navegador**. No desactives la seguridad del navegador. No hace falta un servidor: no se cargan módulos JavaScript, hojas de estilo ni fotografías externas al abrir el archivo.
+Cada bloque dura **15 minutos**. Quien publica el servicio elige **$1.000, $2.500 o $5.000 ARS por bloque**. Se contratan de 1 a 32 bloques. Una ampliación usa la misma tarifa del acuerdo original y requiere otra aprobación/pago: no existe cobro automático por cronómetro.
 
-**Primer recorrido:** Inicio → Probar el recorrido → Empezar con Ana. Enviale una propuesta de 30 minutos a Mateo, cambiá al perfil de Mateo para aceptar, iniciá el intercambio, escribí un mensaje y marcá el servicio como completado. Volvé a Ana para confirmar y liberar los 2 CT. Cada parte puede valorar después. Los cambios de perfil están señalados como demostración.
+INTERA cobra **50/1.000 del bruto = 5%** como comisión total propia. Se descuenta del bruto destinado al prestador; no se suma al total del comprador. Los cargos de Mercado Pago, retenciones y demás obligaciones son externos y no se inventan ni se hardcodean como un porcentaje adicional.
 
-## Qué incluye
+| Tarifa / bloque | Minutos | Total comprador | INTERA 5% | Prestador antes de cargos externos |
+|---|---:|---:|---:|---:|
+| $1.000 | 15 | $1.000 | $50 | $950 |
+| $2.500 | 15 | $2.500 | $125 | $2.375 |
+| $5.000 | 15 | $5.000 | $250 | $4.750 |
+| $2.500 × 4 bloques | 60 | $10.000 | $500 | $9.500 |
 
-- Inicio rediseñado con fotografías ilustrativas, saldo y próxima acción real según el estado local.
-- Catálogo, búsqueda sin tildes, filtros por categoría, barrio, duración, modalidad y saldo.
-- Tarjetas fotográficas, vista rápida operativa, guardar con **Deshacer**, comparador de hasta tres habilidades y carrusel con deslizamiento y controles de teclado.
-- Publicación de ofertas y necesidades, vista previa del formulario, edición de perfiles ficticios, pausa/reactivación y comunidad por barrio.
-- Propuesta, reserva de CT por intercambio, aceptación, inicio, chat local, extensión aprobada por ambas partes, finalización, confirmación y valoración bilateral.
-- Cancelaciones, ausencias y disputas de ejemplo; reportes y bloqueo locales.
-- Agenda y exportación `.ics`, mensajes, actividad pendiente, historial de CT y CSV.
-- Exportación/importación JSON, confirmación antes de reemplazar datos y protección ante respaldos malformados.
-- Tema claro/oscuro; panel **Experiencia visual** con animaciones adaptadas al sistema, movimiento reducido o desactivado.
+**$9.500 no es un neto garantizado:** falta el costo externo aplicable. La app muestra por separado lo contratado, lo informado por Mercado Pago y la disponibilidad informada por el proveedor. No promete retiro instantáneo.
 
-### Animaciones y microinteracciones implementadas
+No hay CT, bienvenida monetaria, compra de créditos, billetera ni escrow propio. Finalizar un servicio **no libera dinero**: Mercado Pago administra la acreditación/disponibilidad mediante Split 1:1.
 
-Entradas escalonadas de contenido y diálogos; elevación de tarjetas; brillo breve de bienvenida en el saldo; contador visual que termina en el valor exacto; ripple al pulsar controles; respuesta del corazón de guardado y de la comparación; entrada de mensajes reales; confeti breve **solo después de confirmar y liberar los CT de la demo**. Los botones del carrusel reflejan sus límites.
+## Probar en Windows, sin npm install
 
-No hay carga simulada con espera artificial, audio, vibraciones, video automático, respuestas de personas ficticias ni estados de presencia inventados. Las respuestas sugeridas y los emojis solo editan el borrador del chat: **no se envían hasta pulsar Enviar**.
+1. Descomprimí **todo** el ZIP en una carpeta nueva.
+2. Instalá Node.js LTS **22.13 o superior** si aún no está instalado.
+3. Hacé doble clic en `INICIAR_INTERA.bat` y dejá abierta la ventana.
+4. Se abre `http://127.0.0.1:4173`. Si no, ingresá esa dirección manualmente.
 
-El modo reducido del sistema prevalece sobre las preferencias de movimiento completo. Desactivar animaciones cancela los efectos pendientes y deja el saldo final visible. Las animaciones no modifican el ledger.
+No abras `public/index.html` con doble clic: esta versión necesita el servidor para las cuentas, cotizaciones y pagos. No desactives CORS ni protecciones del navegador. Los lanzadores nativos de Windows/macOS no se ejecutaron en este entorno Linux.
 
-### Teclado y accesos
+En macOS/Linux: `sh INICIAR_INTERA.sh`. O desde terminal, dentro de la carpeta:
 
-`Ctrl+K` / `Cmd+K`: búsqueda rápida. `/`: búsqueda cuando no estás escribiendo. Flechas y Enter: recorrer y abrir resultados. Escape: cerrar diálogos. Flechas izquierda/derecha: mover el carrusel cuando tiene el foco. El botón de ajustes visuales está disponible también en celular.
+```sh
+node -v
+npm run setup
+npm start
+```
 
-## Reglas que no cambian
+**No hay dependencias npm de ejecución.** `node:sqlite` está incluido en Node; Node 22.16 imprime una advertencia experimental. La versión de Node usada para las pruebas se documenta en el informe. Pinneá y validá la versión de despliegue.
 
-**1 Crédito de Tiempo (CT) = 15 minutos.** Cuatro CT equivalen a una hora para cualquier habilidad. Los servicios se acuerdan en CT enteros; ajustes y cancelaciones usan cuartos de CT. No se compran CT, no se convierten a dinero y no se permite saldo negativo. El saldo disponible es distinto de los CT reservados. La bienvenida de 4 CT es de ejemplo, única por perfil y con vencimiento.
+## Recorrido local completo
 
-La verificación es simulada. El presencial conserva los controles V2 de demo para ambas partes. No se habilitaron menores, cuidado de personas, salud ni otras categorías excluidas del alcance.
+En Inicio, seleccioná **1 · Activar a Mateo**. Aceptá las condiciones y elegí **Vincular Mercado Pago**: en modo MOCK la vinculación está expresamente simulada. Mateo ya tiene ofertas de ejemplo.
 
-Las ilustraciones de referencia contenían tarifas variables por hora y categorías fuera del MVP; esas inconsistencias visuales **no se trasladaron a las reglas del producto**. En esta versión no se muestran distancias GPS inventadas, calificaciones ficticias como reputación real, llamadas, videollamadas ni un mapa sin datos.
+Luego seleccioná **2 · Contratar como Ana** (o Cambiar perfil de prueba), aceptá las condiciones, buscá **Tu compu, sin vueltas**, elegí cuatro bloques y un horario. Se crea una solicitud por $10.000.
 
-## Guardar y recuperar
+Cambiá a Mateo, entrá en Mis servicios y aceptá. Volvé a Ana, abrí la orden y elegí Pagar: verás $10.000 bruto, $500 de INTERA y $9.500 antes de costos externos. Confirmá y elegí **Pago aprobado** en el simulador. El servidor concilia el resultado; no se acredita dinero real.
 
-El archivo intenta usar almacenamiento local del navegador. Si el navegador lo impide, se indica **sesión temporal** y los cambios solo viven en la pestaña. Cambiar el nombre/ubicación del HTML, usar otro navegador o borrar sus datos puede cambiar el almacenamiento accesible.
+Probá el chat. Como Mateo, iniciá y marcá completado. Como Ana, confirmá y valorá. No hay segundo movimiento de fondos al completar. La primera valoración no se envía a la contraparte hasta que ambas hayan evaluado o pasen siete días.
 
-**Exportá un JSON desde Centro de demo → Exportar respaldo antes de cerrar, mover o actualizar.** Para pasar de v2/v3 a v4: conservá el HTML anterior y su respaldo; en v4 elegí Importar respaldo, revisá el resumen y confirmá. No borres el JSON hasta verificar lo recuperado. La compatibilidad conserva `intera-demo-backup`, versión 2; no es un error de numeración.
+Para probar una devolución, creá otra orden, aprobá su pago y cancelala **antes de iniciarla**. El worker procesa la devolución y la muestra confirmada solo después de consultar al proveedor simulado. El panel Pagos y cobros muestra el registro operativo.
 
-La preferencia de tema/movimiento se guarda aparte del estado económico. El comparador y los borradores pertenecen a la sesión de interfaz; no forman parte del respaldo económico.
+## Funciones incluidas
 
-## Imágenes
+- Inicio y catálogo monetarios, fotos ilustrativas, tema claro/oscuro, movimiento reducido, microinteracciones, favoritos con Deshacer y comparador de hasta tres servicios.
+- Publicación/edición/pausa de ofertas; tres tarifas cerradas y aceptación expresa de comisión; vista previa del importe.
+- Necesidades con presupuesto máximo; agenda personal y exportación ICS sin invitaciones.
+- Registro 18+, email verificado, contraseñas scrypt, recuperación, sesiones de servidor y cookies HttpOnly. Verificación/correo simulados solo en MOCK; Resend en sandbox/live.
+- Condiciones inmutables versionadas por hash, aceptación registrada y exigida del lado del servidor.
+- Cotización congelada en cada orden, permisos por participante, disponibilidad sin solapamientos, ampliaciones separadas, chat, reviews ciegas, reportes y bloqueos.
+- OAuth PKCE para cada prestador, tokens cifrados AES-GCM, refresh, Checkout Pro Preferences API con `marketplace_fee`, Webhooks HMAC y consulta a la API antes de confirmar.
+- Conciliación de pago, orden comercial y preferencia; reintentos persistentes, devoluciones idempotentes, pagos duplicados/tardíos, contracargos y errores de resultado desconocido.
+- Registro monetario en centavos enteros, asientos compensatorios, auditoría append-only, exportación de datos propios y CSV.
+- CLI de operación para cola de trabajos, reclamos, devoluciones, conciliación, suspensiones y backup.
 
-Las escenas y los retratos son **imágenes ilustrativas generadas**, recortadas de las tres maquetas de INTERA presentes en esta conversación. No representan usuarios reales ni acreditan identidad, experiencia, reputación o servicios prestados. Hay 11 recursos WebP locales; algunas tarjetas reutilizan la escena de su categoría. Los perfiles sin un retrato propio conservan sus iniciales.
+**Alcance deliberado de esta primera entrega monetaria: servicios remotos entre adultos.** Presencial, KYC de identidad INTERA y profesiones reguladas permanecen bloqueados. La identificación exigida por Mercado Pago a sus cuentas no equivale a implementar V2 de INTERA. No se prometen llamadas/video integrados, notificaciones push, facturación fiscal automática ni soporte humano provisto por el software.
 
-`assets/photos/provenance.json` documenta los recortes y `src/interface/media-data.js` contiene los datos incrustados. La copia fuente incorpora las imágenes preparadas: no es necesario regenerarlas para construir el HTML. No se distribuyen fuentes tipográficas.
+## Mercado Pago real
 
-## Modo demo local: límites de esta entrega
+Leé **[docs/MERCADOPAGO.md](docs/MERCADOPAGO.md)**. Incluye alta de aplicación, seller OAuth, firma Webhook, separación MOCK/SANDBOX/LIVE, requisitos de Split 1:1 y pruebas externas pendientes. No pegues secretos en el chat ni en el HTML.
 
-Es una demo de navegador, no un servicio productivo. No hay backend de negocio, autenticación real, usuarios conectados entre dispositivos, KYC, dinero, llamadas, soporte humano ni moderación real. Un HTML local editable no es una autoridad segura para créditos o reputación.
+Se entrega el código de integración, **no una conexión activada ni una prueba de acreditación real**. Los métodos de pago, identificación/eligibilidad, costos y plazos deben confirmarse con Mercado Pago. Las devoluciones pueden requerir saldo del vendedor. Aprobar condiciones no elimina derechos de consumidores ni obligaciones legales.
 
-El chat, las valoraciones, los acuerdos y los reportes quedan dentro de la demo. No ingreses DNI, contraseñas, domicilios ni información de terceras personas. Los reportes no avisan a servicios de emergencia. Los eventos de calendario llevan marca DEMO y no envían invitaciones.
-
-La QA automatizada se ejecuta en Chromium con el HTML cargado en memoria. No equivale a una prueba de doble clic en Windows, persistencia nativa `file://`, Safari/Firefox/iOS o instalación PWA. Detalle y evidencias: `docs/qa-v4/QA-REPORT-v4.md` en la fuente; `INFORME_DE_PRUEBAS.md` en la distribución.
-
-## Código fuente y verificación
-
-Solo para desarrollar: Node.js 22+ y comandos sin instalación de paquetes. No hace falta ejecutar `npm install`.
+## Ejecutar pruebas
 
 ```sh
 npm test
 npm run check
-npm run build
-npm run e2e
 ```
 
-`npm test` incluye el recorrido de dominio E2E; no sumar `npm run e2e` como una suite adicional. El build genera el mismo HTML en `index.html`, `INTERA.html` y `dist/`. El empaquetador resuelve imports durante la construcción; el archivo entregado usa un único script clásico sin `eval` ni imports en tiempo de ejecución.
+`npm test` usa el runner incluido en Node y SQLite temporal; no llama proveedores reales. El QA de interfaz es opcional, usa Python + Playwright + requests como herramientas de desarrollo; ver `docs/qa/INFORME.md` y `tests/qa/browser.py`. El resultado HTTP/cookies se prueba además nativamente con el servidor. No confundir estas pruebas con certificación del PSP.
 
-Para QA de interfaz, con Python, Playwright y Chromium disponibles:
+## Estructura
+
+```text
+public/                 Interfaz HTML/CSS/JS y recursos locales
+server/domain/          Reglas de tarifa, dinero y validación
+server/db/              SQLite, migración SQL, transacciones y trabajos
+server/providers/       Mercado Pago real y proveedor MOCK separado
+server/                 Auth, consentimiento, servicios, pagos, HTTP, worker
+ tools/                 Inicio, setup, check y CLI administrativa
+ tests/                 Dominio, integración HTTP, proveedor mock, operaciones, UI
+ docs/                  API, economía, Mercado Pago, legal, seguridad, operación, QA
+ .github/workflows/      Pipeline configurado (no ejecutado remotamente aquí)
+ .env.example           Configuración sin secretos, por defecto MOCK
+```
+
+## Persistencia y operación
+
+Un proceso Node por base en **disco local persistente**: `data/intera-mock.sqlite`, `intera-sandbox.sqlite` o `intera-live.sqlite`. SQLite usa WAL, transacciones inmediatas y bloqueo de proceso. No es un backend serverless ni de réplicas horizontales; antes de escalar migrá a PostgreSQL y reemplazá los locks en memoria por coordinación transaccional distribuida.
+
+Los vencimientos y devoluciones siguen trabajando sin navegador abierto mientras el servidor y su worker estén operativos. Hace falta supervisión de proceso, HTTPS, monitoreo de trabajos fallidos, backups externos cifrados, pruebas de restauración y soporte humano. Ver **[docs/OPERACIONES.md](docs/OPERACIONES.md)**.
+
+No se distribuyen bases, cuentas reales, tokens ni claves. La clave privada se almacena separada del respaldo; perderla impide descifrar las autorizaciones de vendedores.
+
+## Migración de v4
+
+**No se importan saldos, reviews ni perfiles ficticios como dinero o reputación real.** La base v5 es nueva y los ambientes no se mezclan. Conservá el HTML y los JSON de v4 como demostración histórica; no hay conversión automática de CT a ARS. Ver `docs/MIGRACION.md`.
+
+## Límites para el lanzamiento
+
+`LIVE_PAYMENTS_ENABLED=false`, `LEGAL_APPROVED=false` y `MP_MARKETPLACE_APPROVED=false` por defecto. LIVE exige identidad del operador, HTTPS, claves, correo real y el hash exacto del texto revisado. Estos flags son controles de despliegue: **no prueban aprobación jurídica, tributaria o comercial**. Ver `docs/READINESS.md` antes de abrir a usuarios reales.
+
+## Historial Git incluido en el ZIP
+
+La carpeta `historial/` del paquete contiene `INTERA-v5.bundle`: snapshot inicial v4 y rama actualizada `feat/paid-blocks-mercadopago`. Es un repositorio local exportado, no una URL de GitHub ni una publicación remota. Para recuperar ramas, commits y etiqueta, con Git instalado:
 
 ```sh
-python docs/qa-v4/browser-qa.py
-python docs/qa-v4/interactions-qa.py
-python docs/qa-v4/visual-regression.py
+git clone -b feat/paid-blocks-mercadopago historial/INTERA-v5.bundle ../intera-con-historia
+cd ../intera-con-historia
+git log --oneline --all
 ```
 
-Estas herramientas de QA no son dependencias del archivo que abre el usuario. No se modifica la política administrada del navegador.
-
-### Servidor/PWA opcional
-
-`npm run dev`, `node tools/server.mjs` o `INICIAR_SERVIDOR.bat` sirven la demo en `http://127.0.0.1:4173`. Ese modo opcional sí necesita Node, no afecta a la apertura directa. Manifiesto y service worker se registran únicamente por HTTP/HTTPS; nunca al abrir el archivo `file://`.
-
-El servidor escucha solo en loopback y permite una lista acotada de archivos. No conecta dispositivos ni sincroniza datos. La distribución incluye los archivos de PWA, pero no se certifica instalación o funcionamiento offline de su service worker en dispositivos reales.
-
-## Organización
-
-`src/domain`: reglas económicas; `src/application`: casos de uso; `src/persistence`: guardado y respaldos; `src/demo`: perfiles ficticios; `src/interface`: vistas, fotos y movimiento; `assets`: recursos locales y estilos; `tests`: verificaciones; `tools`: construcción/servidor; `docs/qa-v4`: evidencia y límites.
-
-La implementación de v4 conserva el dominio y el servicio de aplicación de v3. Se modifica la experiencia de presentación, no el valor temporal de las habilidades.
+El historial es opcional para ejecutar la app. El código de la carpeta principal ya corresponde a v5. La rama `main` del bundle conserva el snapshot histórico recibido, no la versión monetaria activa.

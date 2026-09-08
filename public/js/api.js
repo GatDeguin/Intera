@@ -1,0 +1,4 @@
+let csrf=null;
+export class APIError extends Error{constructor(message,code,status){super(message);this.code=code;this.status=status;}}
+export function setCSRF(value){csrf=value;}
+export async function api(path,{method='GET',data,key}={}){const h={Accept:'application/json'};if(data!==undefined)h['Content-Type']='application/json';if(csrf)h['X-CSRF-Token']=csrf;if(key)h['Idempotency-Key']=key;let r;try{r=await fetch('/api'+path,{method,headers:h,credentials:'same-origin',cache:'no-store',...(data===undefined?{}:{body:JSON.stringify(data)}),signal:AbortSignal.timeout(25000)});}catch{throw new APIError('No se pudo confirmar la respuesta del servidor. Consultá la orden antes de repetir un pago.','NETWORK',0);}let value;try{value=await r.json();}catch{throw new APIError('El servidor no devolvió una respuesta válida.','SERVER',r.status);}if(!r.ok)throw new APIError(value.error||'No se pudo completar la acción.',value.code,r.status);return value;}

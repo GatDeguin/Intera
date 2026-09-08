@@ -1,19 +1,20 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-
-where node >nul 2>nul
+where node >nul 2>&1
 if errorlevel 1 (
-  echo.
-  echo INTERA no encontro Node.js en este equipo.
-  echo Instala Node.js 22 o superior y luego ejecuta nuevamente INICIAR_INTERA.bat.
-  echo.
+  echo No se encontro Node.js. Instala Node.js LTS 22.13 o superior desde nodejs.org.
   pause
   exit /b 1
 )
-
-echo Iniciando INTERA en http://127.0.0.1:4173 ...
-start "INTERA - servidor local" cmd /k "node tools\server.mjs"
-timeout /t 1 /nobreak >nul
-start "" "http://127.0.0.1:4173"
-exit /b 0
+node -e "const [a,b]=process.versions.node.split('.').map(Number);process.exit(a>22 || a===22 && b>=13 ? 0 : 1)"
+if errorlevel 1 (
+  echo Se requiere Node.js 22.13 o superior.
+  pause
+  exit /b 1
+)
+node tools/setup.mjs
+if errorlevel 1 goto failed
+node --env-file-if-exists=.env tools/start-local.mjs
+:failed
+pause

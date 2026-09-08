@@ -1,0 +1,104 @@
+{
+  "description": "Recortes ilustrativos de las maquetas generadas proporcionadas en la conversación. No acreditan identidad ni servicios.",
+  "coordinates": {
+    "scene-tech": [
+      "home",
+      [
+        391,
+        662,
+        550,
+        807
+      ]
+    ],
+    "scene-languages": [
+      "explore",
+      [
+        176,
+        609,
+        314,
+        763
+      ]
+    ],
+    "scene-design": [
+      "explore",
+      [
+        627,
+        609,
+        774,
+        765
+      ]
+    ],
+    "scene-pets": [
+      "explore",
+      [
+        398,
+        614,
+        546,
+        767
+      ]
+    ],
+    "scene-garden": [
+      "home",
+      [
+        607,
+        660,
+        752,
+        807
+      ]
+    ],
+    "portrait-ana": [
+      "home",
+      [
+        512,
+        187,
+        602,
+        277
+      ]
+    ],
+    "portrait-mateo": [
+      "home",
+      [
+        443,
+        666,
+        535,
+        758
+      ]
+    ],
+    "portrait-lucia": [
+      "explore",
+      [
+        671,
+        615,
+        768,
+        712
+      ]
+    ],
+    "portrait-carla": [
+      "explore",
+      [
+        470,
+        1039,
+        545,
+        1114
+      ]
+    ],
+    "portrait-santi": [
+      "explore",
+      [
+        426,
+        617,
+        522,
+        713
+      ]
+    ],
+    "scene-community": [
+      "home",
+      [
+        181,
+        1208,
+        411,
+        1299
+      ]
+    ]
+  }
+}

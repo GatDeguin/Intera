@@ -1,0 +1,5 @@
+import {spawn} from 'node:child_process';import {loadConfig} from '../server/config.mjs';
+const c=loadConfig();if(c.mode!=='mock'){console.error('Este lanzador es solo para el simulador. Usá npm start en sandbox/live.');process.exit(1);}
+const child=spawn(process.execPath,['--env-file-if-exists=.env','server/index.mjs'],{stdio:'inherit'});let done=false;child.on('exit',code=>{done=true;process.exitCode=code||0;});
+for(let i=0;i<30&&!done;i++){try{const r=await fetch(c.baseUrl+'/api/health',{signal:AbortSignal.timeout(700)});if(r.ok&&(await r.json()).version===c.version){const command=process.platform==='win32'?['cmd',['/c','start','',c.baseUrl]]:process.platform==='darwin'?['open',[c.baseUrl]]:['xdg-open',[c.baseUrl]];const browser=spawn(command[0],command[1],{stdio:'ignore'});browser.on('error',()=>console.log('Abrí manualmente '+c.baseUrl));break;}}catch{}await new Promise(r=>setTimeout(r,350));}
+process.on('SIGINT',()=>child.kill('SIGINT'));process.on('SIGTERM',()=>child.kill('SIGTERM'));

@@ -1,0 +1,13 @@
+import {ensure} from '../domain/errors.mjs';
+/** Local test double. Never constructed when mode is sandbox or live. */
+export class MockMercadoPago {
+ constructor(store,config){ensure(config.mode==='mock',500,'MOCK_DISABLED','Simulación deshabilitada.');this.s=store;this.c=config;this.created=0;this.refundCalls=0;this.sequence=0;}
+ async createPreference(token,b,a){this.created++;return {id:'mock-'+a.id,checkoutUrl:`${this.c.baseUrl}/#/checkout/${b.id}`};}
+ async expirePreference(){return {ok:true};}
+ async refresh(){return {access_token:'mock-access',refresh_token:'mock-refresh',expires_in:86400,live_mode:false};}
+ put(p){this.s.run('INSERT INTO mock_payments VALUES(?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data',String(p.id),JSON.stringify(p));return p;}
+ simulate(a,status='approved',overrides={}){ensure(['approved','pending','rejected','in_mediation','charged_back','refunded'].includes(status),422,'MOCK_STATUS','Estado de simulación inválido.');const b=this.s.one('SELECT * FROM bookings WHERE id=?',a.booking_id);const pid=String(this.s.now()*100+(++this.sequence%100));return this.put({id:pid,status,status_detail:status==='approved'?'accredited':status,currency_id:'ARS',collector_id:a.mp_seller_id,external_reference:a.external_ref,transaction_amount:b.gross_cents/100,transaction_amount_refunded:0,live_mode:false,date_created:new Date(this.s.now()).toISOString(),date_approved:new Date(this.s.now()).toISOString(),date_last_updated:new Date(this.s.now()).toISOString(),money_release_status:'pending',money_release_date:null,fee_details:[{type:'application_fee',amount:b.commission_cents/100}],metadata:{booking_id:b.id,attempt_id:a.id,intera_version:5},transaction_details:{},...overrides});}
+ async getPayment(token,pid){const row=this.s.one('SELECT data FROM mock_payments WHERE id=?',String(pid));ensure(row,404,'MOCK_PAYMENT','Pago simulado no encontrado.');return JSON.parse(row.data);}
+ async searchPayments(token,ref){return this.s.all('SELECT data FROM mock_payments').map(r=>JSON.parse(r.data)).filter(p=>p.external_reference===ref);}
+ async refund(token,pid,cents,key){this.refundCalls++;const p=await this.getPayment(token,pid);const prior=p.refunds?.find(r=>r.key===key);if(prior)return prior;const amount=p.transaction_amount_refunded*100+cents;ensure(amount<=p.transaction_amount*100,409,'MP_REFUND_LIMIT','Importe de devolución excesivo.');const r={id:'refund-'+key,payment_id:p.id,amount:cents/100,status:'approved',key};this.put({...p,status:amount===p.transaction_amount*100?'refunded':'approved',transaction_amount_refunded:amount/100,refunds:[...(p.refunds||[]),r],date_last_updated:new Date(this.s.now()+1).toISOString()});return r;}
+}
